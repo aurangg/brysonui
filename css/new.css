@@ -1,0 +1,123 @@
+.grey-btn{
+    background-color: white;
+    outline:none;
+    border:1px solid #ebebeb;
+    color:#212529;
+    text-align: center;
+    border-radius: 5px;
+    padding:10px 20px;
+    font-size:16px;
+    margin-left: 5px;
+    margin-right:5px;
+}
+.blue-btn{
+    background-color: #0a5dff;
+    outline:none;
+    border:none;
+    color:white;
+    text-align: center;
+    border-radius: 5px;
+    padding:10px 20px;
+    font-size:16px;
+    margin-left: 5px;
+    margin-right:5px;
+}
+
+.black-paragraph{
+    font-size:13px;
+    text-align: left;
+    font-size:300;
+    letter-spacing: -0.5px;;
+}
+
+
+.fs-22-x{
+    font-size:22px;
+}
+.fs-18-x{
+    font-size:18px;
+}
+.ml-10-x{
+    margin-left: 10px;
+}
+.ml-15-x{
+    margin-left: 15px;
+}
+.mt-30-x{
+    margin-top:30px;
+}
+.mt-20-x{
+    margin-top:20px;
+}
+
+
+.justify-space-between{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.justify-center-align{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.justify-content-baseline{
+    display:flex;
+    align-items: baseline;
+}
+.flex-align-start{
+    display:flex;
+    align-items: flex-start;
+}
+.inline-block{
+    display:inline-block;
+}
+.currency-box{
+    background-color: #f7f7f7;
+    border-radius: 50%;
+    height:50px;
+    width:50px;
+}
+.currency-box .dollar-img{
+    width:15px;
+    height:15px;
+}
+.currency-box .company-img{
+    width:22px;
+    height:22px;
+}
+.account-money{
+    font-size:36px;
+    width:50%;
+}
+.account-info{
+    color:#b2b2b2;
+    font-family: "Inter", sans-serif;
+    letter-spacing: -0.5px;
+    font-size: 14px;
+    margin-top:2px;
+    font-weight: 300;
+}
+.company-category{
+    margin-top:10px;
+    font-size:14px;
+    text-align: left;
+}
+.company-category-s{
+    margin-top:10px;
+    font-size:12px;
+    text-align: right;
+}
+.see-all-transaction{
+    font-size:16px;
+    font-family: "Inter", sans-serif;
+    letter-spacing: -0.3px;
+    font-weight: 400;
+}
+.company-price{
+    font-size:16px;
+    width:100%;
+}
+.width-100{
+    width: 100% !important;
+}

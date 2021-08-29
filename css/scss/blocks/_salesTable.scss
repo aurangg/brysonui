@@ -1,0 +1,223 @@
+.salesTable {
+  margin: 24px auto 64px;
+  width: 100%;
+  .sales-table {
+    margin: 0 auto;
+    width: 80%;
+    position: relative;
+    .first-checkmarks {
+      position: relative;
+      width: 7%;
+      text-align: center;
+    }
+    .minus-check {
+      position: relative;
+      cursor: pointer;
+      &::before {
+        position: absolute;
+        content: "";
+        top: -8px;
+        left: -10px;
+        width: 16.5px;
+        height: 16.5px;
+        display: block;
+        background: $grey;
+        border: 2px solid $grey;
+        border-radius: 2px;
+        padding: 0px 3px;
+      }
+      &::after {
+        position: absolute;
+        content: "";
+        top: 0px;
+        left: -5px;
+        width: 8px;
+        height: 2px;
+        display: block;
+        background: $black;
+      }
+    }
+    .head-line {
+      display: block;
+      width: 100vw;
+      height: 20%;
+      position: absolute;
+      top: -37px;
+      left: 50%;
+      transform: translateX(-50%);
+      border-bottom: 1px solid $grey;
+      box-shadow: inset 0px -1px 0px $grey;
+    }
+    thead tr {
+      box-shadow: inset 0 -1px 0 #ebebeb;
+    }
+    tbody tr {
+      box-shadow: inset 0px -1px 0px $grey;
+    }
+    th {
+      width: 19.7%;
+      height: 52px;
+      font-size: 13px;
+      font-weight: 500;
+      line-height: 24px;
+      letter-spacing: -0.5px;
+      &:nth-of-type(2) {
+        font-weight: 600;
+        cursor: pointer;
+      }
+    }
+    td {
+      position: relative;
+      height: 56px;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 17px;
+      letter-spacing: -0.5px;
+    }
+    .col-reports {
+      width: 26%;
+    }
+    .custom-control {
+      padding-left: 0;
+    }
+    .custom-checkbox .custom-control-label::before {
+      border-radius: 2px;
+      left: -1.3rem;
+      box-shadow: none;
+      cursor: pointer;
+    }
+    .custom-control-label::after {
+      top: 2px;
+      left: -20px;
+      cursor: pointer;
+    }
+    .first-checkmarks_input:not(:checked) ~ .first-checkmarks_label::after {
+      content: '\2212';
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: $grey;
+      font-weight: 700;
+      font-size: 16px;
+      top: 3px;
+      left: -21px;
+    }
+  }
+  .sales-attachment {
+    width: 165px;
+    border: 1px solid $grey;
+    border-radius: 33px;
+    padding: 5px 12px 5px 11px;
+    font-size: 13px;
+    line-height: 16px;
+    letter-spacing: -0.5px;
+    position: relative;
+    color: $black;
+    transition: all 0!important;
+    display: flex;
+    justify-content: flex-start;
+    .attachmentIcon {
+      margin-right: 5px;
+    }
+    &:hover {
+      border-color: $primary;
+      color: $primary;
+      transition: all 0.2s;
+    }
+  }
+  .sales-row {
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  .sales-user {
+    display: block;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background: $grey;
+    img {
+      width: 100%;
+    }
+  }
+  .sales-user1 {
+    position: relative;
+    left: 0;
+    transition:left 0.2s linear;
+    &:hover {
+      z-index: 10;
+      left: -7px;
+    }
+  }
+  .sales-user2 {
+    position: absolute;
+    top: 14px;
+    left: 21px;
+    transition:left 0.2s linear;
+    &:hover {
+      z-index: 10;
+      left: 11px;
+    }
+  }
+  .sales-user3 {
+    display: block;
+    width: 29px;
+    height: 29px;
+    border-radius: 50%;
+    background: $grey;
+    border: 2px solid $white;
+    position: absolute;
+    top: 14px;
+    left: 39px;
+    color: $black;
+    font-size: 13px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: -0.5px;
+    padding: 4px 2px 1px;
+  }
+  .sales-report {
+    font-size: 13px;
+    line-height: 16px;
+    letter-spacing: -0.5px;
+    color: $black;
+    transition: all 0.2s;
+    position: relative;
+    .chevron-right {
+      margin-left: 5px;
+      width: 6px;
+      height: 9px;
+      margin-bottom: 2px;
+      svg {
+        fill: $primary;
+      }
+    }
+    &:hover {
+      color: $primary;
+    }
+  }
+ 
+}
+
+.sales-table {
+  th.sorted[data-order="1"],
+  th.sorted[data-order="-1"] {
+    position: relative;
+  }
+
+  th.sorted[data-order="1"]::after,
+  th.sorted[data-order="-1"]::after {
+    left: 50px;
+    position: absolute;
+    top: 58%;
+    transform: translateY(-50%);
+  }
+  th.sorted[data-order="-1"]::after {
+    content: url(../img/icons/chevronUpBlack.svg);
+  }
+
+  th.sorted[data-order="1"]::after {
+    content: url(../img/icons/chevronDownBlack.svg);
+    left: 50px;
+  }
+}

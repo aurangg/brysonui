@@ -1,0 +1,50 @@
+.revenue {
+  &__title h2 {
+    font-weight: 700 !important;
+    font-size: 28px;
+    line-height: 34px;
+    letter-spacing: -2px;
+  }
+
+  &__design {
+    margin-top: 5px;
+    margin-left: 16px;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 13px;
+    letter-spacing: -0.5px;
+  }
+  &__design span:before {
+    content: "";
+    display: inline-block;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: $purple;
+    margin-bottom: 0.5px;
+    margin-right: 3px;
+  }
+  &__development {
+    margin-top: 5px;
+    margin-left: 8px;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 13px;
+    letter-spacing: -0.5px;
+  }
+  &__development span:before {
+    content: "";
+    display: inline-block;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: $warning;
+    margin-bottom: 0.5px;
+    margin-right: 3px;
+  }
+  .card__graphic {
+    margin-top: 6px;
+  }
+}.revenue__development_two span::before {
+  background: $success;
+}

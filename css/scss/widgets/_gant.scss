@@ -1,0 +1,159 @@
+.timetable {
+  margin-top: 9px;
+  
+  ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0;
+    position: relative;
+    margin-bottom: 11px;
+    border-radius: 4px;
+    li {
+      font-size: 11px;
+      line-height: 13px;
+      letter-spacing: -0.5px;
+      color: $darkGrey;
+      position: relative;
+    }
+  }
+  &__color {
+    display: flex;
+    height: 16px;
+    width: 100%;
+    position: relative;
+    input {
+      padding: 0!important;
+    }
+  }
+  &__descr {
+    margin-top: 16px;
+    font-size: 11px;
+    line-height: 13px;
+    letter-spacing: -0.5px;
+  }
+  &__design {
+    margin-right: 8px;
+    span:before {
+      content: "";
+      display: inline-block;
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: $purple;
+      margin-bottom: 0.5px;
+      margin-right: 3px;
+    }
+  }
+  &__development {
+    margin-right: 8px;
+    span:before {
+      content: "";
+      display: inline-block;
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: $primary;
+      margin-bottom: 0.5px;
+      margin-right: 3px;
+    }
+  }
+  &__communication span:before {
+    content: "";
+    display: inline-block;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: $success;
+    margin-bottom: 0.5px;
+    margin-right: 3px;
+  }
+}
+.timetable__color {
+  ul {
+    border: 1px solid $grey;
+    border-radius: 4px;
+  }
+  ul li {
+    width: 14.42%;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    overflow: hidden;
+    &:nth-child(2) {
+      border-radius: 0;
+    }
+    &:nth-child(3) {
+      border-radius: 0;
+    }
+    &:nth-child(4) {
+      border-radius: 0;
+    }
+    &:nth-child(5) {
+      border-radius: 0;
+    }
+    &:nth-child(6) {
+      border-radius: 0;
+    }
+    &:nth-child(7) {
+      border-radius: 0;
+      border-top-right-radius: 4px;
+      border-bottom-right-radius: 4px;
+    }
+  }
+  ul li label {
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+.timetable__color ul li label input {
+  visibility: hidden;
+  appearance: none;
+}
+
+.timetable__color ul li label .timetable__box-check {
+  height: 16px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s;
+  &:hover {
+    background: $purple;
+  }
+}
+.timetable__color_blue {
+  margin-top: 8px;
+}
+.timetable__color_green {
+  margin-top: 8px;
+}
+
+.timetable__color ul li label .timetable__box-check_blue:hover {
+  background: $primary;
+}
+.timetable__color ul li label .timetable__box-check_green:hover {
+  background: $success;
+}
+
+.timetable__color ul li label input:checked ~ .timetable__box-check {
+  background: $purple;
+  border: 1px solid $purple;
+}
+.timetable__color ul li label input:checked ~ .timetable__box-check_blue {
+  background: $primary;
+  border: 1px solid $primary;
+}
+.timetable__color ul li label input:checked ~ .timetable__box-check_green {
+  background: $success;
+  border: 1px solid $success;
+}
+
+.gant-weeks {
+  border: none!important;
+}

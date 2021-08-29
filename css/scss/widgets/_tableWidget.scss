@@ -1,0 +1,31 @@
+.table {
+  margin-bottom: 0;
+  width: 100%;
+  thead th {
+    border: none;
+  }
+  th {
+    border: none;
+    font-size: 11px;
+    font-weight: normal;
+    line-height: 23px;
+    letter-spacing: -0.5px;
+    color: $darkGrey;
+  }
+
+  td span {
+    font-weight: normal;
+    font-size: 11px;
+    line-height: 25px;
+    letter-spacing: -0.5px;
+    color: $black;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+.overflowAuto {
+  overflow: hidden;
+  height: 60%;
+  position: relative;}

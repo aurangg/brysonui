@@ -1,0 +1,19 @@
+.chart-container {
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  svg {
+    overflow: visible;
+  }
+}
+#barChart {
+  margin-top: 5px;
+}
+
+.taskScroll {
+  overflow: hidden;
+  margin-top: 6px;
+  height: 64%;
+  position: relative;}

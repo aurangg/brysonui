@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="preload"
+      as="font"
+      href="../fonts/Inter-Regular.woff2"
+      type="font/woff2"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      as="font"
+      href="../fonts/Inter-Regular.woff"
+      type="font/woff"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      as="font"
+      href="../fonts/Inter-Bold.woff2"
+      type="font/woff2"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      as="font"
+      href="../fonts/Inter-Bold.woff"
+      type="font/woff"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/12.1.6/css/intlTelInput.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://www.jqueryscript.net/demo/jQuery-Plugin-For-Country-Selecter-with-Flags-flagstrap/dist/css/flags.css"
+    />
+    <title>Login</title>
+    <link rel="stylesheet" href="../css/login.css" />
+  </head>
+  <body class="login">
+    <div class="container">
+      <h2 class="login__title">motherboard</h2>
+      <div class="row login__block">
+        <div
+          class="login__block_left col-xl-5 col-lg-5 col-md-12 col-sm-12 ml-auto"
+        >
+          <div class="login__block_title">
+            Create account and get a free 7 days trial
+          </div>
+
+          <form role="form" accept-charset="utf-8" id="login-form">
+            <div class="form-group">
+              <label for="phone">Phone</label>
+              <div class="input-group">
+                <input
+                  name="phone"
+                  id="phone"
+                  class="form-control form-control_h40"
+                />
+              </div>
+            </div>
+
+            <div class="form-row justify-content-between">
+              <div class="form-group form__name">
+                <label for="name">First name</label>
+                <div class="input-group">
+                  <input name="fname"
+                    id="name"
+                    type="text"
+                    class="form-control form-control_h40"
+                    required="required"
+                    onkeyup="allLetter(this)"
+                  />
+                </div>
+              </div>
+              <div class="form-group form__surname">
+                <label for="surname">Last name</label>
+                <div class="input-group">
+                  <input name="lname"
+                    id="surname"
+                    type="text"
+                    class="form-control form-control-sm rounded-0 form-control_h40"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <div>
+                <div class="form-group">
+                  <label>Country</label>
+                  <div id="basic" data-input-name="country"></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Text with checkbox -->
+            <div class="form-check">
+              <div class="custom-control custom-checkbox">
+                <input
+                  type="checkbox"
+                  class="custom-control-input"
+                  id="customCheck"
+                  name="example1"
+                />
+                <label class="custom-control-label" for="customCheck">
+                  I agree to Motherboard terms of service
+                </label>
+              </div>
+            </div>
+            <!-- Text with checkbox -->
+
+            <button type="submit" class="sign-up" form="login-form">
+              Sign up
+            </button>
+          </form>
+
+          <hr />
+
+          <div
+            class="login__account row justify-content-between align-items-center"
+          >
+            <div class="login__account_descr">Already have an account?</div>
+            <a href="#" class="login__account_btn">Log in to dashboard</a>
+          </div>
+        </div>
+        <div
+          class="login__block_right col-xl-5 col-lg-5 col-md-12 col-sm-12 mr-auto"
+        >
+          <img src="../img/loginBG.png" alt="Login image" />
+        </div>
+      </div>
+    </div>
+
+    <script src="../js/libs/jquery.min.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="../js/libs/bootstrap.min.js"></script>
+    <script src="../js/libs/intlTelInput.min.js"></script>
+    <script src="../js/libs/jquery.flagstrap.js"></script>
+    <script src="../js/libs/tel-input.js"></script>
+    <script src="../js/libs/jquery.maskedinput.min.js"></script>
+    <script>
+      function allLetter(inputtxt) {
+        var letters = /^[a-z]*$/i;
+        if (!inputtxt.value.match(letters)) {
+          addClass();
+        }
+      }
+    </script>
+    <script>
+      $("input[name=phone]").mask("(999)9999999999?", { autoclear: false });
+    </script>
+  </body>
+</html>

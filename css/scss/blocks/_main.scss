@@ -1,0 +1,46 @@
+#wrapper {
+  overflow-x: hidden;
+}
+
+#wrapper.toggled #content-wrapper .container-fluid {
+  padding: 0;
+}
+
+#content-wrapper {
+    width: 100%;
+    position: absolute;
+    padding: 24px;
+    padding-left: 28px;
+    top: 100px;
+    overflow: hidden;
+  }
+  .header-3 {
+    padding-top: 11px !important;
+  }
+  #wrapper.toggled #content-wrapper {
+    position: absolute;
+    margin-right: -250px;
+  }
+  .container-fluid {
+    padding-left: 12px;
+    padding-right: 0;
+  }
+  
+  .page-filter {
+    width: 50%;
+    position: relative;
+    #reportrange4 {
+      background: $white;
+    }
+  }
+  .iti-mobile {
+    .page-title {
+      width: 100%;
+    }
+  }
+  .dark-bg {
+    background: $black;
+    padding: 8px;
+    border-radius: 3px;
+    min-width: 280px;
+  }

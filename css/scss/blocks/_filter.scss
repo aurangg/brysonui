@@ -1,0 +1,106 @@
+.filter {
+  position: absolute;
+  top: 12%;
+  right: 10%;
+  max-width: 342px;
+  width: 100%;
+  min-height: 230px;
+  height: 100%;;
+  background: #ffffff;
+  border: 1px solid #ebebeb;
+  box-shadow: 0px 4px 13px rgba(0, 0, 0, 0.04);
+  border-radius: 3px;
+  padding: 20px;
+  z-index: 9999;
+  .row {
+    justify-content: space-between;
+  }
+  &__countries {
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: -0.5px;
+  }
+  &__clear {
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 16px;
+    letter-spacing: -0.5px;
+    color: #b2b2b2;
+    background: none;
+    border: none;
+    &:focus {
+      outline: none;
+    }
+    &_two {
+      font-weight: 500;
+      font-size: 13px;
+      line-height: 16px;
+      letter-spacing: -0.5px;
+      color: #b2b2b2;
+      background: none;
+      border: none;
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+  &__block {
+    margin-top: 10px;
+  }
+  &__type {
+    margin: 0;
+    margin-top: 10px;
+  }
+  .form-check {
+    padding: 0;
+    margin-bottom: 10px;
+  }
+  .custom-control-label {
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: -0.5px;
+    padding-top: 4px;
+    color: $black;
+  }
+  .custom-checkbox .custom-control-label::before {
+    width: 16px;
+    height: 16px;
+    background: #ffffff;
+    border: 1px solid #ebebeb;
+    box-sizing: border-box;
+    border-radius: 3px;
+    top: 0.22rem;
+    left: -1.5rem;
+  }
+
+  .custom-checkbox
+    .custom-control-input:checked
+    ~ .custom-control-label::after {
+    width: 16px;
+    height: 16px;
+    background-color: #0a5dff;
+    border: 1px solid #0a5dff;
+    border-radius: 3px;
+    background-image: url(../img/icons/checkboxChecked.svg);
+    background-size: 100% 100%;
+    top: 0.22rem;
+    left: -1.5rem;
+  }
+  .custom-control-input:disabled ~ .custom-control-label,
+  .custom-control-input[disabled] ~ .custom-control-label {
+    color: #b2b2b2;
+  }
+  .custom-control-input:disabled ~ .custom-control-label::before,
+  .custom-control-input[disabled] ~ .custom-control-label::before {
+    background: #f7f7f7;
+    /* Light grey */
+
+    border: 1px solid #f7f7f7;
+  }
+}
+
+#filter-tooltip {
+  display: none;
+}

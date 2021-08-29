@@ -1,0 +1,50 @@
+.spider {
+  &__teams {
+    font-size: 11px;
+    line-height: 13px;
+    letter-spacing: -0.5px;
+    flex-wrap: wrap;
+  }
+  &__team {
+    &_a {
+      margin-right: 8px;
+      span:before {
+        content: "";
+        display: inline-block;
+        width: 7px;
+        height: 7px;
+        border-radius: 50%;
+        background: $primary;
+        margin-bottom: 0.5px;
+        margin-right: 3px;
+      }
+    }
+    &_b span:before {
+      content: "";
+      display: inline-block;
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: $success;
+      margin-bottom: 0.5px;
+      margin-right: 3px;
+    }
+  }
+}
+.spider__container > .card__graphic {
+  margin-top: 0px !important;
+}
+
+#wrapper.toggled {
+  #spiderChart {
+    width: auto;
+    max-height: 224px;
+  }
+}
+#spiderChart {
+  margin: 0px auto 0px;
+  min-width: 300px;
+  width: 100%;
+  min-height: 220px;
+  height: 100%;
+}

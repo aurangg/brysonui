@@ -1,0 +1,143 @@
+.funnelBig .card__graphic {
+  overflow: hidden;
+}
+.content-body {
+  min-width: 744px;
+  width: 100%;
+  display: flex;
+  margin-top: 34px;
+  .content-body-item {
+    flex: 1;
+    border-right: 1px solid rgba($color: #000000, $alpha: 0.08);
+    height: 218px;
+    padding: 10px;
+    position: relative;
+    &:last-of-type {
+      border-right: 0;
+    }
+    h4 {
+      color: #000;
+      font-size: 28px;
+      font-weight: 700;
+      line-height: 24px;
+      letter-spacing: -2px;
+      margin: 0;
+    }
+    span {
+      font-size: 13px;
+      font-weight: 500;
+      line-height: 16px;
+      letter-spacing: -0.5px;
+    }
+
+    .stat {
+      position: relative;
+      margin-top: 95px;
+      text-align: center;
+      font-size: 32px;
+      font-weight: 100;
+      margin-bottom: 0;
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 24px;
+      letter-spacing: -2px;
+      z-index: 999;
+      &:last-of-type {
+        margin-top: 4px;
+        font-size: 13px;
+        font-weight: 500;
+        line-height: 16px;
+        letter-spacing: -0.699999988079071px;
+      }
+    }
+
+    .graph {
+      position: absolute;
+      width: 110%;
+      left: -10%;
+      bottom: -10%;
+      height: 170px;
+      opacity: 0.9;
+      z-index: 900;
+      svg {
+        width: 100%;
+        height: 170px;
+      }
+    }
+
+
+    h4 {
+      color: #000;
+    }
+
+    .stat {
+      color: #000;
+      font-weight: 300;
+    }
+  }
+
+  &:last-of-type {
+    border-right: none;
+  }
+}
+
+.graph {
+  svg polygon {
+    fill: rgba(255, 168, 0, 0.4);
+  }
+
+  &:nth-last-of-type(2) svg polygon {
+    fill: rgba(255, 168, 0, 0.4);
+  }
+}
+
+.content-body-item:nth-of-type(2) .graph:nth-of-type(1) {
+  width: 100%;
+  left: 0;
+  svg polygon {
+    fill: rgba(255, 168, 0, 0.3);
+  }
+}
+.content-body-item:nth-of-type(3) .graph:nth-of-type(1) {
+  width: 100%;
+  left: 0;
+  svg polygon {
+    fill: rgba(255, 168, 0, 0.2);
+  }
+}
+.content-body-item:nth-of-type(4) .graph:nth-of-type(1) {
+  width: 110%;
+  left: 0;
+  svg polygon {
+    fill: rgba(255, 168, 0, 0.1);
+  }
+}
+.revenue__title {
+  width: 50%;
+  margin-bottom: 5px;
+}
+.revenue__title_two {
+  width: 100%;
+}
+.revenue__datePicker {
+  width: 100%;
+}
+
+.users {
+  padding-bottom: 18px !important;
+  &__info {
+    margin-top: 13px;
+  }
+}
+
+#funnelChart {
+  height: 100%;
+  min-width: 700px;
+  width: 100%;
+  min-height: 254px;
+}
+
+.funnelBig .card__graphic {
+  max-height: 232px;
+  height: 100%;
+}

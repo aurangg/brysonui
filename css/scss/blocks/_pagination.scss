@@ -1,0 +1,99 @@
+.pagination {
+  margin-bottom: 1rem;
+  margin-top: 20px;
+  margin-left: 34.5px;
+}
+
+.page-item .page-link {
+  background: $white;
+  border: 1px solid #ebebeb;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.02);
+  border-radius: 3px;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid $grey;
+  border-radius: 3px;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: -0.5px;
+  color: $black;
+  margin-right: 8px;
+  box-shadow: 0px 4px 3px 0px rgba(0, 0, 0, 0.02);
+  transition: all 0.2s;
+  position: relative;
+  &:hover {
+    background-color: $lightGrey;
+  }
+  &-left {
+    padding: 0;
+    &::before {
+      content: '\276E';
+      color: $black;
+      font-size: 12px;
+      font-weight: 600;
+      margin-top: 1px;
+      left: 50%;
+      top: 0px;
+    }
+  }
+  &-right {
+    padding: 0;
+    &::before {
+      content: '\276F';
+      color: $black;
+      font-size: 12px;
+      font-weight: 600;
+      margin-top: 1px;
+      left: 50%;
+      top: 0px;
+    }
+  }
+}
+.page-item:last-of-type .page-link {
+  margin-right: 0;
+}
+.active {
+  background-color: none !important;
+}
+.page-item.active .page-link {
+  background: #ebebeb;
+  border: 1px solid #ebebeb;
+  box-sizing: border-box;
+  border-radius: 3px;
+  color: $black;
+}
+
+.form-control {
+  width: 36px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: none !important;
+  box-shadow: 0 0 0px 1px inset $grey;
+  border-radius: 3px;
+  background-color: $lightGrey;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: -0.5px;
+  color: $black;
+  margin-right: 8px;
+  padding: 8px 6px;
+  text-align: center;
+  &:focus {
+    box-shadow: none;
+    outline: none;
+  }
+}
+
+.bottom-toolbar {
+  margin: 0;
+  margin-left: 37.5px;
+}

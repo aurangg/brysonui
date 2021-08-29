@@ -1,0 +1,401 @@
+.custom-select {
+  width: 207px;
+  background: #fff url(../img/icons/chevronDown-grey.svg) no-repeat right
+    0.35rem center/18px 18px;
+  height: 32px;
+  padding-top: 0.175rem;
+  position: relative;
+  padding: 0;
+  padding-left: 10px;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: -0.5px;
+  border: none;
+  box-shadow: 0 0 0px 1px inset $grey, 0 4px 3px rgba(0, 0, 0, 0.02);
+  border-radius: 3px;
+  &_h40 {
+    height: 40px;
+    font-size: 14px;
+    line-height: 17px;
+  }
+  &_w180 {
+    width: 180px;
+  }
+  &:focus {
+    border: none !important;
+    box-shadow: 0 0 0px 2px inset $primary;
+  }
+}
+
+select option {
+  box-shadow: 0 4px 3px rgba(0, 0, 0, 0.02);
+  outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 3px;
+}
+
+#output {
+  padding: 0px;
+}
+select {
+  width: 100%;
+}
+.chosen-container {
+  width: 100% !important;
+  min-width: 180px;
+}
+.chosen-choices {
+  background: $lightGrey !important;
+
+  box-sizing: border-box;
+  border-radius: 3px;
+  height: 32px;
+
+  border: none !important;
+  box-shadow: 0 0 0px 1px inset $grey;
+  &:focus-within {
+    border: none !important;
+    box-shadow: inset 0 0 0 2px $primary;
+    outline: none;
+  }
+}
+.chosen-container-active {
+  min-height: 40px;
+  height: 100%;
+  box-shadow: none;
+  outline: none;
+  box-sizing: border-box;
+  border-radius: 3px;
+}
+
+.chosen-drop {
+  border-radius: 3px;
+  top: 110%;
+  box-shadow: none;
+  border-color: $grey;
+}
+.highlighted {
+  background: $primary !important;
+}
+li.search-choice {
+  background: $white !important;
+  border: 1px solid $grey !important;
+  box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.02) !important;
+  border-radius: 2px !important;
+  padding: 3px 28px 3px 8px;
+  margin-top: 0px;
+  width: auto;
+  span {
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: -0.5px;
+  }
+}
+.chosen-container-multi .chosen-choices {
+  height: 32px;
+  
+  border: none !important;
+  box-shadow: 0 0 0px 1px inset $grey;
+  border-radius: 3px;
+}
+.chosen-container-multi .chosen-choices li.search-choice {
+  background: #ffffff;
+  border: 1px solid #ebebeb;
+  box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.02);
+  border-radius: 2px;
+}
+.chosen-container-multi .chosen-choices li.search-field input[type="text"] {
+  margin-top: 4px;
+  margin-left: 4px;
+}
+.chosen-container-multi .chosen-choices li.search-choice span {
+  margin-right: 4px;
+}
+.chosen-container-multi .chosen-choices li.search-choice .search-choice-close::after {
+  content: '\2716';
+  position: absolute;
+  top: 1px;
+  right: 3px;
+  display: block;
+  font-size: 11px;
+  color: $darkGrey;
+}
+
+.chosen-container .chosen-drop {
+  border: none;
+  overflow: hidden;
+}
+.form-group {
+  label {
+    display: block;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: -0.5px;
+    margin-bottom: 5px;
+  }
+  &_error {
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: -0.5px;
+    color: #ff6e6e;
+  }
+  &_disabled {
+    color: $darkGrey;
+  }
+  .input-group {
+    margin-left: 0;
+    &:focus {
+      box-shadow: none;
+    }
+    ::placeholder {
+      font-size: 13px;
+      font-weight: 500;
+      line-height: 16px;
+      letter-spacing: -0.5px;
+      color: $black;
+    }
+    &_disabled {
+      ::placeholder {
+        color: $darkGrey;
+      }
+    }
+    &_h40 {
+      ::placeholder {
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 17px;
+        letter-spacing: -0.5px;
+      }
+    }
+    &_w180 {
+      width: 180px;
+      .form-control {
+        width: 50%;
+      }
+    }
+  }
+  .form-control {
+    background: $lightGrey;
+
+    border: none !important;
+    box-shadow: 0 0 0px 1px inset $grey;
+    border-radius: 3px;
+    height: 32px;
+    width: 207px;
+    color: $black;
+    text-align: left;
+    margin-right: 0;
+    &_h40 {
+      height: 40px;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 17px;
+      letter-spacing: -0.5px;
+    }
+    &_w180 {
+      width: 180px;
+    }
+    &_disabled {
+      border: 1px solid $grey;
+      background: $white;
+    }
+    &:focus {
+  
+      border: none !important;
+      box-shadow: 0 0 0px 2px inset $primary;
+      caret-color: $primary;
+    }
+    &_error {
+   
+      border: none !important;
+      box-shadow: 0 0 0px 2px inset #ff6e6e;
+      background: $lightGrey;
+      caret-color: #ff6e6e;
+      &:focus {
+       
+        border: none !important;
+        box-shadow: 0 0 0px 2px inset #ff6e6e;
+        background: $lightGrey;
+        caret-color: #ff6e6e;
+      }
+    }
+  }
+  .input-group-prepend {
+    .btn {
+      height: 32px;
+      border: 1px solid #ebebeb;
+      border-radius: 3px 0px 0px 3px;
+      font-size: 13px;
+      font-weight: 500;
+      line-height: 16px;
+      letter-spacing: -0.5px;
+      color: $black;
+      width: 70px;
+      &_h40 {
+        height: 40px;
+      }
+      &:hover {
+        outline: none;
+        box-shadow: none;
+        background: transparent;
+      }
+      &:focus {
+        outline: none;
+        box-shadow: none;
+        background: transparent;
+        color: $black;
+      }
+    }
+    .dropdown-menu a {
+      color: $black;
+      font-size: 13px;
+      font-weight: 500;
+      line-height: 16px;
+      letter-spacing: -0.5px;
+    }
+    .dropdown-toggle::after {
+      border: none;
+      content: url(../img/icons/chevronDown-grey.svg);
+      margin-top: 3px;
+    }
+  }
+  .input-group-text {
+    background: #ffffff;
+    border: none !important;
+    box-shadow: 0 0 0px 1px inset $grey;
+    box-sizing: border-box;
+    border-radius: 3px 0px 0px 3px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 17px;
+    letter-spacing: -0.5px;
+    height: 32px;
+    &_h40 {
+      height: 40px;
+    }
+  }
+  .chosen-container-active {
+    height: 32px;
+  }
+  &_h40 {
+    .chosen-container-multi
+      .chosen-choices
+      li.search-choice
+      .search-choice-close {
+      top: 6px;
+      right: 7px;
+    }
+    .chosen-container-multi .chosen-choices li.search-choice {
+      margin-top: 3px;
+    }
+  }
+}
+.form-group_h40 {
+  #output {
+    padding: 0px;
+  }
+  select {
+    width: 100%;
+  }
+  .chosen-container {
+    width: 100% !important;
+    min-width: 180px;
+    &:focus {
+      border: none !important;
+      box-shadow: 0 0 0px 2px inset $primary;
+    }
+  }
+  .chosen-choices {
+    background: $lightGrey !important;
+    border: 1px solid $grey;
+    box-sizing: border-box;
+    border-radius: 3px;
+    height: 40px;
+    box-shadow: none;
+    &:focus-within {
+      border: none !important;
+      box-shadow: inset 0 0 0 2px $primary;
+    }
+  }
+  .chosen-container-active {
+    height: 40px;
+    box-shadow: none;
+    outline: none;
+    box-sizing: border-box;
+    border-radius: 3px;
+  }
+
+  .chosen-drop {
+    border-radius: 3px;
+    top: 110%;
+    box-shadow: none;
+    border-color: $grey;
+  }
+  .highlighted {
+    background: $primary !important;
+  }
+  li.search-choice {
+    background: $white !important;
+    border: 1px solid $grey !important;
+    box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.02) !important;
+    border-radius: 2px !important;
+    padding: 6px 28px 6px 8px !important;
+    margin-top: 5px !important;
+    width: auto;
+    span {
+      font-size: 13px;
+      font-weight: 500;
+      line-height: 16px;
+      letter-spacing: -0.5px;
+    }
+  }
+  .chosen-container-multi .chosen-choices {
+    height: 40px;
+ 
+    border: none !important;
+    box-shadow: 0 0 0px 1px inset $grey;
+    border-radius: 3px;
+    &:focus-within {
+      border: none!important;
+      box-shadow: 0 0 0px 2px inset $primary;
+    }
+  }
+  .chosen-container-multi .chosen-choices li.search-choice {
+    background: #ffffff;
+    border: 1px solid #ebebeb;
+    box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.02);
+    border-radius: 2px;
+  }
+  .chosen-container-multi .chosen-choices li.search-field input[type="text"] {
+    margin-top: 8px;
+    margin-left: 4px;
+  }
+  .chosen-container-multi
+    .chosen-choices
+    li.search-choice
+    .search-choice-close::after {
+      content: '\2716';
+      position: absolute;
+      top: 2px;
+      right: 3px;
+      display: block;
+      font-size: 11px;
+      color: $darkGrey;
+  }
+
+  .chosen-container .chosen-drop {
+    border: none;
+    overflow: hidden;
+  }
+}
+
+.chosen-choices:focus-within {
+  border: none !important;
+  box-shadow: 0 0 0px 2px inset $primary;
+}

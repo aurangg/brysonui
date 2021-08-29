@@ -1,0 +1,179 @@
+.list {
+  position: relative;
+  background: $white;
+  width: auto;
+}
+
+.list ul {
+  position: relative;
+  padding: 20px;
+}
+
+.list ul li {
+  position: relative;
+  list-style: none;
+  padding: 8px 0 0;
+}
+
+.list ul li:last-child {
+  border-bottom: none;
+}
+
+.list ul li label {
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.list ul li label input {
+  visibility: hidden;
+  appearance: none;
+  padding: 0 !important;
+}
+
+.list ul li label .check-text {
+  position: absolute;
+}
+
+.list ul li label .box-check {
+  position: absolute;
+  right: 0;
+  height: 16px;
+  width: 16px;
+  border-radius: 2px;
+  border: 1px solid $grey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.list ul li label .box-check::before {
+  content: "";
+  position: absolute;
+  top: 30%;
+  left: 30%;
+  transform: translateX(-50%);
+  width: 7px;
+  height: 0.2812rem;
+  transform: rotate(-40deg);
+}
+
+.list ul li label input:checked ~ .check-text {
+  text-decoration: line-through;
+  color: $darkGrey;
+}
+.list ul li label input:checked ~ .check-line {
+  background: $grey;
+}
+
+.list ul li label input:checked ~ .box-check {
+  background: $primary;
+  border: 1px solid $primary;
+}
+
+.list ul li label input:checked ~ .box-check::before {
+  border-left: 2px solid $white;
+  border-bottom: 2px solid $white;
+}
+.list ul li label input:checked ~ .box-check::before {
+  border-left: 2px solid $white;
+  border-bottom: 2px solid $white;
+}
+
+.check-line {
+  width: 2px;
+  height: 33px;
+  border-radius: 5px;
+  &__orange {
+    background-color: $warning;
+  }
+  &__green {
+    background-color: $success;
+  }
+  &__blue {
+    background-color: $primary;
+  }
+}
+
+.check-text {
+  margin-left: 8px;
+}
+
+.check-time {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 13px;
+  letter-spacing: -0.5px;
+}
+.check-plan {
+  margin-top: 2px;
+  font-weight: normal;
+  font-size: 11px;
+  line-height: 13px;
+  letter-spacing: -0.5px;
+}
+
+/* Replace li with item selector */
+/* Replace n + 2 with limit criterion */
+.limit-items .items li:nth-child(n + 4) {
+  display: none;
+}
+.limit-items #show-allTasks:checked ~ .items li{
+  display: list-item!important;
+}
+
+.limit-items #show-allTasks ~ label[for="show-allTasks"] {
+  display: none;
+}
+.limit-items #show-allTasks:checked ~ .text-hide {
+  display: inline-block!important;
+}
+.limit-items #show-allTasks:not(:checked) ~ .text-show {
+  display: inline-block;
+}
+
+/* OPTIONAL */
+/* Style label as button below items */
+.limit-items {
+  position: relative;
+}
+.limit-items #show-allTasks {
+  display: none;
+}
+.limit-items label[for="show-allTasks"] {
+  width: 100%;
+  font-family: "Inter";
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: -0.5px;
+  text-align: right;
+  border: none;
+  cursor: pointer;
+  color: $primary;
+  transition: all 0.2s;
+   position: absolute;
+  box-sizing: border-box;
+  width: 80%;
+  right: 0;
+  top: 0%;
+}
+.limit-items label[for="show-allTasks"]:hover {
+  border: none;
+  color: $darkGrey;
+}
+.limit-items label[for="show-allTasks"]:active {
+  border: none;
+  background-color: #fff;
+  color: $primary;
+}
+.text-show {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.text-hide {
+  margin: 0;
+}

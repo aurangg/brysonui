@@ -1,0 +1,57 @@
+#doughnutChart {
+  margin-bottom: -30px;
+  width: 50%;
+  height: 20%;
+}
+.card__graphic_absolute {
+  max-width: 70%;
+}
+
+#do_legend {
+  height: 62px;
+}
+
+#do_legend {
+  width: 100%;
+}
+
+#do_legend > ul {
+  padding: 0;
+  text-align: left;
+}
+
+#do_legend {
+  width: 100%;
+  bottom: 10%;
+}
+#do_legend li {
+  cursor: pointer;
+  margin: 4px 3px;
+  display: inline-table;
+}
+#do_legend li span {
+  position: relative;
+  padding: 3px 10px 3px 4px;
+  color: black;
+  z-index: 2;
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 13px;
+  letter-spacing: -0.5px;
+  &:first-of-type {
+    border-radius: 50%;
+    padding: 0px;
+    width: 7px;
+    height: 7px;
+    display: inline-block;
+  }
+}
+
+#do_legend {
+  height: 62px;
+  overflow-y: hidden;
+}
+
+.donut-area {
+  height: calc(100% - 62px);
+}

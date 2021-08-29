@@ -1,0 +1,195 @@
+.trader-body {
+  #content-wrapper {
+    padding-bottom: 10px;
+  }
+  .page-breadcrumb {
+    margin-left: 0px !important;
+  }
+  .page-title {
+    margin-left: 0px !important;
+  }
+  .container-fluid {
+    position: relative;
+  }
+}
+.section-line {
+  width: 100%;
+  height: 12px;
+  background-color: $lightGrey;
+  display: block;
+  position: absolute;
+  left: 0;
+  margin-top: 24px;
+}
+
+.trader {
+  margin-top: 54px;
+  &__table {
+    width: 100%;
+    height: 628px;
+    overflow: hidden;
+    margin-bottom: 28px;
+    thead tr {
+      th {
+        height: 52px;
+        padding-right: 24px;
+      }
+      th:first-of-type {
+        cursor: pointer;
+      }
+      th:last-of-type {
+        text-align: center;
+      }
+    }
+    .empty-col {
+      width: 5%;
+    }
+    &_header {
+      width: 30%;
+      font-weight: 500;
+      &:first-of-type {
+        font-weight: 600;
+      }
+    }
+    tbody {
+      border-top: 1px solid $grey;
+      border-bottom: 1px solid $grey;
+      tr {
+        border-bottom: 1px solid $grey;
+      }
+      td {
+        padding-right: 24px;
+        height: 56px;
+        &:last-of-type {
+          text-align: center;
+          .price__switcher {
+            display: flex;
+            justify-content: center;
+            padding-right: 0;
+          }
+        }
+      }
+      label {
+        margin-bottom: 0 !important;
+      }
+    }
+    &_address {
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 17px;
+      letter-spacing: -0.5px;
+    }
+    &_name {
+      margin-top: 5px;
+      font-size: 11px;
+      font-weight: 400;
+      line-height: 13px;
+      letter-spacing: -0.5px;
+      color: $darkGrey;
+    }
+    .price__switcher {
+      margin-top: 0;
+      justify-content: flex-start;
+      padding-left: 0;
+      color: $black;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 17px;
+      letter-spacing: -0.5px;
+      .bump_not {
+        margin-right: 5px;
+        cursor: pointer;
+        margin-bottom: 0;
+        margin-top: 2px;
+      }
+    }
+    &_percent {
+      font-size: 13px;
+      font-weight: 500;
+      line-height: 16px;
+      letter-spacing: -0.5px;
+      text-align: right;
+    }
+    &_company {
+      color: $darkGrey;
+      font-size: 11px;
+      font-weight: 400;
+      line-height: 13px;
+      letter-spacing: -0.5px;
+      text-align: right;
+    }
+  }
+  &__showing {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 17px;
+    letter-spacing: -0.5px;
+    margin-right: 12px;
+  }
+  &__page {
+    a {
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 17px;
+      letter-spacing: -0.5px;
+      color: $black;
+      margin-left: 8px;
+    }
+  }
+  &__pages {
+    a {
+      width: 32px;
+      height: 32px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid $grey;
+      border-radius: 3px;
+      font-size: 13px;
+      font-weight: 500;
+      line-height: 16px;
+      letter-spacing: -0.5px;
+      color: $black;
+      margin-right: 8px;
+      box-shadow: 0px 4px 3px 0px rgba(0, 0, 0, 0.02);
+      transition: all 0.2s;
+      &:hover {
+        background-color: $lightGrey;
+      }
+    }
+  }
+}
+
+.trendCharts {
+  height: 35px !important;
+  width: 80% !important;
+  margin-right: 54px;
+}
+
+.page-title {
+  width: 50%;
+}
+
+.trader__table {
+  th.sorted[data-order="1"],
+  th.sorted[data-order="-1"] {
+    position: relative;
+  }
+
+  th.sorted[data-order="1"]::after,
+  th.sorted[data-order="-1"]::after {
+    left: 150px;
+    position: absolute;
+    top: 55%;
+    transform: translateY(-50%);
+  }
+  th.sorted[data-order="-1"]::after {
+    content: url(../img/icons/chevronUpBlack.svg);
+  }
+
+  th.sorted[data-order="1"]::after {
+    content: url(../img/icons/chevronDownBlack.svg);
+    left: 150px;
+  }
+}

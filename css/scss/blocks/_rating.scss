@@ -1,0 +1,55 @@
+.table-block {
+  padding-left: 0;
+  padding-right: 0;
+  table tbody td {
+    padding-right: 24px;
+  }
+  table tr td:nth-of-type(4) {
+    padding-right: 12px;
+    .rate {
+      display: inline-block;
+      vertical-align: middle;
+      margin: 0;
+      padding: 0;
+      border: none;
+    }
+
+    input {
+      display: none;
+    }
+
+    label {
+      float: right;
+      font-size: 0;
+      color: $darkGrey;
+      margin-right: 4px;
+      margin-top: 5px;
+      margin-bottom: 0;
+    }
+
+    label:before {
+      content: "\62";
+      font-family: "star-orange";
+      font-size: 19px;
+    }
+
+    label:hover,
+    label:hover ~ label {
+      content: "\62";
+      color: $warning;
+      transition: 0.2s;
+    }
+
+    input:checked ~ label {
+      content: "\62";
+      color: $warning;
+    }
+
+    input:checked ~ label:hover,
+    input:checked ~ label:hover ~ label {
+      content: "\62";
+      color: $warning;
+      transition: 0.2s;
+    }
+  }
+}

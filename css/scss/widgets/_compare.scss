@@ -1,0 +1,55 @@
+.compare {
+  width: 45%;
+  &__title {
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: -0.5px;
+  }
+  &__percent {
+    margin-top: 7px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: -2px;
+  }
+  &__total {
+    margin-top: 8px;
+    font-size: 13px;
+    line-height: 16px;
+    letter-spacing: -0.5px;
+    color: $darkGrey;
+  }
+}
+
+.vertical-line {
+  width: 51px;
+  height: 0px;
+  border-top: 1px solid $grey;
+  transform: rotate(-90deg);
+}
+.vertical-circle {
+  width: 31px;
+  height: 31px;
+  border-radius: 50%;
+  background: $white;
+  border: 1px solid $grey;
+  padding: 5px 5px 4px;
+  font-size: 13px;
+  letter-spacing: -0.5px;
+  position: relative;
+  z-index: 1;
+}
+
+.progress {
+  margin-top: 16px;
+  height: 12px;
+  border-radius: 3px;
+  .progress-bar {
+    background-color: $warning;
+    margin-right: 2px;
+    &:last-child {
+      margin-right: 0;
+      background-color: $primary;
+    }
+  }
+}

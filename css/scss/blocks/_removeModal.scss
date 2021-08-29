@@ -1,0 +1,68 @@
+.modal#removeModal {
+  z-index: 1055!important;
+}
+#removeModal .modal-dialog {
+  height: 100%;
+  
+}
+.removeModal {
+  background: $white;
+  max-width: 389px;
+  width: 100%;
+  min-height: 341px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+  z-index: 1061!important;
+  padding: 32px;
+  overflow: hidden;
+  box-shadow: 0px 20px 34px rgba(0, 0, 0, 0.1);
+  border-radius: 6px !important;
+  .close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+  }
+  &__image {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border: 1px solid $grey;
+    border-radius: 6px;
+    background: $white;
+    img {
+      width: 28px;
+      height: auto;
+    }
+  }
+  &__title {
+    margin-top: 16px;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 34px;
+    text-align: center;
+    letter-spacing: -2px;
+  }
+  &__descr {
+    margin-top: 8px;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    letter-spacing: -0.5px;
+  }
+  &__buttons {
+    margin-top: 29px;
+    .btn__cancel {
+      margin-top: 8px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+}

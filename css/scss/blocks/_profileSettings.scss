@@ -1,0 +1,404 @@
+.profile {
+  margin-top: 25px;
+  &__header {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+    font-feature-settings: "ordn" on;
+  }
+
+  &__alert {
+    margin-top: 24px;
+    margin-bottom: 24px;
+    background: $success;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 24px 32px;
+    position: relative;
+    &_title {
+      font-weight: 700;
+      font-size: 28px;
+      line-height: 34px;
+      letter-spacing: -2px;
+      color: $white;
+    }
+    &_message {
+      margin-top: 8px;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 17px;
+      letter-spacing: -0.5px;
+      color: $white;
+    }
+  }
+
+  &__new {
+    margin-top: 24px;
+    border: 1px solid $grey;
+    border-radius: 6px;
+    padding: 32px;
+    &_title {
+      font-weight: 700;
+      font-size: 28px;
+      line-height: 34px;
+      letter-spacing: -2px;
+    }
+    &_subtitle {
+      margin-top: 8px;
+      font-size: 13px;
+      line-height: 16px;
+      letter-spacing: -0.5px;
+      color: $darkGrey;
+    }
+    &_headingInfo {
+      margin: 0;
+      margin-top: 28px;
+      position: relative;
+      a {
+        font-size: 13px;
+        line-height: 16px;
+        letter-spacing: -0.5px;
+        color: $black;
+        margin-right: 28px;
+        padding: 3.5px 7px 9px;
+        position: relative;
+        z-index: 10;
+        transition: all 0.2s;
+        overflow: hidden;
+        &:nth-child(4n) {
+          margin-right: 0;
+        }
+        &::after {
+          position: absolute;
+          content: "";
+          height: 3px;
+          top: 29px;
+          background: $primary;
+          width: 0;
+          right: 0;
+          transition: width 0.4s;
+          z-index: 3;
+        }
+        &:hover {
+          background: $lightGrey;
+          border-radius: 3px;
+          &:after {
+            left: 0;
+            width: 100%;
+          }
+        }
+      }
+      .active {
+        border-bottom: 3px solid $primary;
+        padding-left: 0;
+        padding-right: 0;
+        &:hover {
+          background: none !important;
+        }
+      }
+      .info-line {
+        margin-top: 16px;
+        display: block;
+        width: 100%;
+        content: "";
+        height: 1px;
+        background: $grey;
+        position: absolute;
+        top: 15px;
+      }
+    }
+    &_form {
+      margin-top: 24px;
+      .input-group {
+        margin: 0;
+      }
+      .form-row {
+        margin: 0;
+      }
+
+      .intl-tel-input {
+        width: 100%;
+      }
+      .form-control {
+        width: 100%;
+        height: 40px;
+        background: $lightGrey;
+  
+        border: none!important;
+        box-shadow: 0 0 0px 1px inset $grey;
+        font-size: 14px;
+        &:focus {
+  
+          border: none!important;
+          box-shadow: 0 0 0px 2px inset $primary;
+        }
+      }
+      .flag-container {
+        padding: 2px;
+      }
+      .selected-flag {
+        background: $white;
+        &:focus {
+          outline: none;
+        }
+      }
+      .country-list {
+        z-index: 15 !important;
+        font-size: 14px;
+        border-radius: 3px;
+      }
+      .form__name,
+      .form__surname {
+        width: 48.5%;
+      }
+      .form-group {
+        margin-bottom: 16px;
+        label {
+          font-size: 13px;
+          font-weight: 500;
+          line-height: 16px;
+          letter-spacing: -0.5px;
+        }
+      }
+    }
+    &_buttons {
+      margin-top: 27px;
+    }
+    #output {
+      padding: 0px;
+    }
+    select {
+      width: 100%;
+    }
+    .chosen-container {
+      width: 100% !important;
+    }
+    .chosen-choices {
+      background: $lightGrey;
+   
+      box-sizing: border-box;
+      border-radius: 3px;
+      min-height: 40px;
+      height: 100%;
+      border: none!important;
+      box-shadow: 0 0 0px 1px inset $grey;
+      &:focus-within {
+     
+        border: none!important;
+        box-shadow: 0 0 0px 2px inset $primary;
+      }
+    }
+    .chosen-container-active {
+      min-height: 40px;
+      height: 100%;
+      box-shadow: none;
+      outline: none;
+      box-sizing: border-box;
+      border-radius: 3px;
+    }
+
+    .chosen-drop {
+      border-radius: 3px;
+      top: 110%;
+      box-shadow: none;
+      border-color: $grey;
+    }
+    .highlighted {
+      background: $primary !important;
+    }
+    li.search-choice {
+      background: $white !important;
+      border: 1px solid $grey !important;
+      box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.02) !important;
+      border-radius: 2px !important;
+      padding: 6px 28px 6px 8px !important;
+      margin-top: 5px !important;
+      width: auto;
+      span {
+        font-size: 13px;
+        font-weight: 500;
+        line-height: 16px;
+        letter-spacing: -0.5px;
+      }
+    }
+    .chosen-container-multi .chosen-choices li.search-field input[type="text"] {
+      margin-top: 8px;
+    }
+    .chosen-container-multi
+      .chosen-choices
+      li.search-choice
+      .search-choice-close {
+      position: absolute;
+      top: 6px;
+      right: 7px;
+      display: block;
+      width: 16px;
+      height: auto;
+      content: url(../img/icons/closeIcon.svg) !important;
+      background: none !important;
+    }
+  }
+}
+
+.profile__new_headingInfo a:hover :after {
+  transform: translateX(100%);
+}
+
+.alert-close {
+  position: absolute;
+  right: 26px !important;
+  top: 10px !important;
+  width: 11.31px;
+  height: 11.31px;
+  opacity: 1;
+  display: inline-block;
+  padding: 1em;
+  margin: -1em;
+  transition: all 0.2s;
+}
+.alert-close:hover {
+  opacity: 0.3;
+  cursor: pointer;
+}
+.alert-close:before,
+.alert-close:after {
+  position: absolute;
+  left: 25px;
+  content: " ";
+  height: 14px;
+  width: 2px;
+  background-color: $white;
+}
+.alert-close:before {
+  transform: rotate(45deg);
+}
+.alert-close:after {
+  transform: rotate(-45deg);
+}
+
+.modal-close {
+  position: absolute;
+  right: 20px;
+  top: 12px;
+  width: 11.31px;
+  height: 11.31px;
+  background: none;
+  border: none;
+  opacity: 0.8;
+  z-index: 10000;
+  display: inline-block;
+  padding: 1em;
+  margin: -1em;
+  &:hover {
+    opacity: 1;
+    cursor: pointer;
+  }
+  &:before,
+  &:after {
+    position: absolute;
+    outline: none;
+    left: 15px;
+    content: " ";
+    height: 14px;
+    width: 2px;
+    background: $darkGrey;
+    &:focus {
+      outline: none;
+    }
+  }
+  &:before {
+    transform: rotate(45deg);
+  }
+  &:after {
+    transform: rotate(-45deg);
+  }
+  &:focus {
+    outline: none;
+  }
+}
+
+.border {
+  margin-top: 25px;
+  border: 1px solid #EBEBEB;
+  border-radius: 6px;
+  padding: 0 30px 30px;
+  overflow: hidden;
+  &:last-of-type {
+    padding-top: 30px;
+  }
+}
+#output {
+  padding: 0px;
+}
+select {
+  width: 100%;
+}
+.chosen-container {
+  width: 100% !important;
+}
+.chosen-choices {
+  background: $lightGrey;
+
+  box-sizing: border-box;
+  border-radius: 3px;
+  min-height: 40px;
+  height: 100%;
+  border: none!important;
+  box-shadow: 0 0 0px 1px inset $grey;
+  &:focus-within {
+ 
+    border: none!important;
+    box-shadow: 0 0 0px 2px inset $primary;
+  }
+}
+.chosen-container-active {
+  min-height: 40px;
+  height: 100%;
+  box-shadow: none;
+  outline: none;
+  box-sizing: border-box;
+  border-radius: 3px;
+}
+
+.chosen-drop {
+  border-radius: 3px;
+  top: 110%;
+  box-shadow: none;
+  border-color: $grey;
+}
+.highlighted {
+  background: $primary !important;
+}
+li.search-choice {
+  background: $white !important;
+  border: 1px solid $grey !important;
+  box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.02) !important;
+  border-radius: 2px !important;
+  padding: 6px 28px 6px 8px !important;
+  margin-top: 5px !important;
+  width: auto;
+  span {
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: -0.5px;
+  }
+}
+.chosen-container-multi .chosen-choices li.search-field input[type="text"] {
+  margin-top: 8px;
+}
+.chosen-container-multi
+  .chosen-choices
+  li.search-choice
+  .search-choice-close {
+  position: absolute;
+  top: 6px;
+  right: 7px;
+  display: block;
+  width: 16px;
+  height: auto;
+  content: url(../img/icons/closeIcon.svg) !important;
+  background: none !important;
+}

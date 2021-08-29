@@ -1,0 +1,302 @@
+.modal.right .modal-dialog {
+  position: fixed;
+  margin: auto;
+  max-width: 482px;
+  width: 100%;
+  height: 100%;
+  -webkit-transform: translate3d(0%, 0, 0);
+  -ms-transform: translate3d(0%, 0, 0);
+  -o-transform: translate3d(0%, 0, 0);
+  transform: translate3d(0%, 0, 0);
+}
+
+/*Right*/
+.modal.right.fade .modal-dialog {
+  right: 0;
+  -webkit-transition: opacity 0.3s linear, right 0.3s ease-out;
+  -moz-transition: opacity 0.3s linear, right 0.3s ease-out;
+  -o-transition: opacity 0.3s linear, right 0.3s ease-out;
+  transition: opacity 0.3s linear, right 0.3s ease-out;
+}
+
+.modal.right.fade.in .modal-dialog {
+  right: 0;
+}
+
+.modal-userProfile {
+  background: $white;
+  max-width: 482px;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 999;
+  padding: 15px 16px;
+  overflow: hidden;
+  border-radius: 0!important;
+  &__title {
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: -0.5px;
+    position: relative;
+    margin-bottom: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__line {
+    border-bottom: 1px solid $grey;
+    display: block;
+    width: 120%;
+    margin-bottom: 16px;
+    margin-left: -15px;
+    margin-right: -10px;
+  }
+  &__image {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background: $grey;
+    margin: 0 auto;
+    img {
+      width: 100%;
+    }
+  }
+  &__name {
+    margin-top: 20px;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 34px;
+    text-align: center;
+    letter-spacing: -2px;
+  }
+  &__jobTitle {
+    margin-top: 8px;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    letter-spacing: -0.5px;
+    color: $darkGrey;
+  }
+  &__buttons {
+    margin: 18px auto 4px;
+    display: flex;
+    justify-content: center;
+    .btn__save {
+      display: flex;
+      align-items: center;
+      height: 32px;
+      font-size: 13px;
+      line-height: 16px;
+      padding: 5px 12px;
+    }
+    .btn__cancel {
+      display: flex;
+      align-items: center;
+      height: 32px;
+      font-size: 13px;
+      line-height: 16px;
+      padding: 5px 12px;
+    }
+  }
+  .profile__new_headingInfo {
+    padding: 0 5px;
+    margin-top: 18px;
+    justify-content: center;
+    a {
+      padding: 3.5px 7px 10px;
+      margin-right: 15px;
+      &:hover {
+        background: $lightGrey;
+        border-radius: 3px;
+      }
+    }
+  }
+  &__bigLine {
+    height: 8px;
+    background: $lightGrey;
+    border-top: 1px solid $grey;
+    position: absolute;
+    display: block;
+    width: 110%;
+    bottom: -7px;
+    left: -18px;
+  }
+  &__bigLine_two {
+    border: none;
+  }
+  &__blockTitle {
+    margin-top: 29px;
+    display: flex;
+    align-items: center;
+    padding: 0 8px;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: -0.5px;
+    .personal-icon {
+      width: 20px;
+      height: 20px;
+      background: #8051f6;
+      border-radius: 3px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 8px;
+      svg {
+        width: 11.8px;
+        height: 11.8px;
+      }
+    }
+  }
+  &__blockTitle2 {
+    margin-top: 37px;
+    .stats-icon {
+      width: 20px;
+      height: 20px;
+      background: #f6a051;
+      border-radius: 3px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 8px;
+      svg {
+        width: 10.5px;
+        height: 11.8px;
+      }
+    }
+  }
+  &__form {
+    margin: 0;
+    margin-top: 15px;
+    justify-content: space-between;
+    position: relative;
+    padding: 0 8px;
+    .form-group {
+      width: 48%;
+      margin-bottom: 16px;
+      .input-group {
+        margin: 0;
+
+        input {
+          font-size: 13px;
+          font-weight: 500;
+          line-height: 16px;
+          letter-spacing: -0.5px;
+          caret-color: $primary;
+        }
+      }
+      .form-control {
+        height: 32px;
+        color: $black;
+        border-radius: 3px !important;
+        border-color: $grey !important;
+        &:focus {
+          border: none!important;
+          box-shadow: 0 0 0px 2px inset $primary;
+          background: $lightGrey;
+        }
+      }
+      label {
+        font-size: 13px;
+        line-height: 16px;
+        letter-spacing: -0.5px;
+        color: $black !important;
+      }
+    }
+    .form__phone2 {
+      label {
+        color: $darkGrey !important;
+      }
+    }
+    .modal-userProfile__bigLine {
+      bottom: -15px;
+    }
+  }
+  .custom-select {
+    background: $white url(../img/icons/chevronDown-grey.svg) no-repeat right
+      0.35rem center/18px 18px;
+    height: 32px;
+    padding-top: 0.175rem;
+    position: relative;
+    padding: 0;
+    padding-left: 10px;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: -0.5px;
+    border: none;
+    box-shadow: 0 0 0px 1px inset $grey, 0px 4px 3px rgba(0, 0, 0, 0.02);
+  
+    &:focus {
+      border: none!important;
+      box-shadow: 0 0 0px 2px inset $primary;
+    }
+    select.customDropdown:hover {
+      background: $primary;
+    }
+  }
+  #phone2 {
+    background: $white;
+  }
+  .phone2 ::placeholder {
+    color: $darkGrey;
+    font-size: 13px;
+    line-height: 16px;
+    letter-spacing: -0.5px;
+  }
+  .gant {
+    padding: 0 8px;
+    margin-bottom: 76px;
+  }
+  .card {
+    margin-top: 20px;
+  }
+}
+
+.profile-close {
+  position: absolute;
+  right: 2%;
+  top: 2%;
+  width: 11.31px;
+  height: 11.31px;
+  opacity: 1;
+  z-index: 10000;
+  &:hover {
+    opacity: 0.3;
+    cursor: pointer;
+  }
+  &:before,
+  &:after {
+    position: absolute;
+    left: 15px;
+    content: " ";
+    height: 14px;
+    width: 1px;
+    background: $black;
+  }
+  &:before {
+    transform: rotate(45deg);
+  }
+  &:after {
+    transform: rotate(-45deg);
+  }
+}
+
+
+.selected-flag:focus {
+  border: none !important;
+  outline: none !important;
+}
+
+.intl-tel-input .country-list .flag-box,
+.intl-tel-input .country-list .country-name,
+.intl-tel-input .country-list .dial-code {
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: -0.5px;
+}
+.intl-tel-input .country-list {
+  width: 900%;
+}

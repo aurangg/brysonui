@@ -20607,26 +20607,26 @@ li.search-choice
 }
 
 .refferal__table th:first-of-type {
-  width: 19.3%;
+  /* width: 19.3%; */
   cursor: pointer;
 }
-
+/* 
 .refferal__table th:last-of-type {
-  width: 10%;
-}
+  width: 19.3%;
+} */
 
 .refferal__table_header {
-  width: 19.3%;
+  /* width: 19.3%; */
   font-weight: 500;
 }
 
 .refferal__table_header:first-of-type {
   font-weight: 600;
 }
-
+/* 
 .refferal__table_header:nth-of-type(5) {
   width: 25%;
-}
+} */
 
 .refferal__table tbody td {
   height: 56px;

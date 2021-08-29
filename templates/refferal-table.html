@@ -196,6 +196,7 @@
           </defs>
     </svg>
     <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/new.css" />
   </head>
   <body class="refferal-body">
     <div id="wrapper">
@@ -622,7 +623,7 @@
                   href="#pills-service"
                   aria-controls="pills-service"
                   aria-selected="true"
-                  >Service information</a
+                  >All Invoices</a
                 >
               </li>
               <li class="nav-item">
@@ -633,7 +634,7 @@
                   href="#pills-contacts"
                   aria-controls="pills-contacts"
                   aria-selected="true"
-                  >Contacts</a
+                  >Drafts</a
                 >
               </li>
               <li class="nav-item">
@@ -644,7 +645,7 @@
                   href="#pills-attached"
                   aria-controls="pills-attached"
                   aria-selected="false"
-                  >Attached files</a
+                  >Outstanding</a
                 >
               </li>
               <li class="nav-item">
@@ -655,7 +656,18 @@
                   href="#pills-permissions"
                   aria-controls="pills-permissions"
                   aria-selected="false"
-                  >Permissions</a
+                  >Past due</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  id="pills-permissions-tab"
+                  data-toggle="pill"
+                  href="#pills-permissions"
+                  aria-controls="pills-permissions"
+                  aria-selected="false"
+                  >Paid</a
                 >
               </li>
             </ul>
@@ -723,895 +735,648 @@
             <table class="refferal__table table_sort" role="table">
               <thead>
                 <tr>
-                  <th scope="col" class="refferal__table_header">Income</th>
+                  <th scope="col" class="refferal__table_header">Customer</th>
 
                   <th scope="col" class="refferal__table_header">
-                    Permissions
+                    Invoice #
                   </th>
 
                   <th scope="col" class="refferal__table_header">
-                    UTM Sources
+                    Amount
                   </th>
 
                   <th scope="col" class="refferal__table_header">
-                    Header title
+                    Period
+                  </th>
+                  <th scope="col" class="refferal__table_header">
+                    Hours
+                  </th>
+                  <th scope="col" class="refferal__table_header">
+                    Due
+                  </th>
+                  <th scope="col" class="refferal__table_header">
+                    Created
+                  </th>
+                  <th scope="col" class="refferal__table_header">
+                    Status
                   </th>
 
-                  <th scope="col"></th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
                   <td>
-                    <div class="income-total">+10 ETH</div>
-                    <div class="income-user">Leslie Alexander</div>
+                    <div class="income-total">PepsiCo</div>
+                  </td>
+                  <td>
+                    <div class="income-total">DJ-003</div>
                   </td>
 
                   <td>
-                    <span class="permissions permissions_admin"
-                      >Administrator</span
-                    >
+                    <div class="income-total">
+                      $345.00
+                    </div>
                   </td>
 
                   <td>
+                    <div class="income-total">
+                      May 2020
+                    </div>
+                  </td>
+
+                  <td>
+                    <div class="income-total">
+                      11.5
+                    </div>
+                  </td>
+
+                  <td>
+                    <div class="income-total">
+                      in 2 days
+                    </div>
+                  </td>
+
+                  <td>
+                    <div class="income-total">
+                      Aug 13, 2021
+                    </div>
+                  </td>
+
+
+                  <!-- <td>
                     <a href="#" class="sources">http://www.zoomit.com</a>
-                  </td>
+                  </td> -->
+
 
                   <td>
-                    <div>37% done</div>
-                    <div class="progress table__progress">
-                      <div
-                        class="progress-bar"
-                        style="width: 37%"
-                        role="progressbar"
-                        aria-valuenow="37"
-                        aria-valuemin="0"
-                        aria-valuemax="100"
-                      ></div>
-                    </div>
-                  </td>
-
-                  <td>
-                    <a
-                      href="#"
-                      id="threePoint-btn_white-1"
-                      class="threePoint-btn_white"
-                      > <svg class="filterBtn">
-                        <use xlink:href="#triplePoint"></use>
-                      </svg></a>
-                    <div class="refferal__overlay" id="ref-over-1">
-                      <span class="romb_white"></span>
-                      <div class="refferal__modal">
-                        <ul>
-                          <li>
-                            <a href="#">
-                              <i class="addUser">
-                                <svg class="filterBtn">
-                                  <use xlink:href="#addUser"></use>
-                                </svg>
-                              </i>
-                              Add to contacts
-                            </a>
-                          </li>
-                          <li><span></span></li>
-                          <li>
-                            <a href="#">
-                              <i class="addUser">
-                                <svg class="filterBtn">
-                                  <use xlink:href="#trashGrey"></use>
-                                </svg>
-                              </i>
-                              Remove profile
-                            </a>
-                          </li>
-                          <li><span></span></li>
-                          <li class="disabled">
-                            <a href="#">
-                              <i class="addUser">
-                                <svg class="filterBtn">
-                                  <use xlink:href="#printIcon"></use>
-                                </svg>
-                              </i>
-                              Diasbled
-                            </a>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
+                    <span class="permissions permissions_admin">
+                      Open
+                    </span>
                   </td>
                 </tr>
 
                 <tr>
                   <td>
-                    <div class="income-total">+83.87468495 ETH</div>
-                    <div class="income-user">Floyd Miles</div>
+                    <div class="income-total">PepsiCo</div>
+                  </td>
+                  <td>
+                    <div class="income-total">DJ-003</div>
                   </td>
 
                   <td>
-                    <span class="permissions permissions_user">User</span>
-                  </td>
-
-                  <td>
-                    <a href="#" class="sources"
-                      >http://www.zencorporation.com</a
-                    >
-                  </td>
-
-                  <td>
-                    <div>47% done</div>
-                    <div class="progress table__progress">
-                      <div
-                        class="progress-bar"
-                        style="width: 47%"
-                        role="progressbar"
-                        aria-valuenow="47"
-                        aria-valuemin="0"
-                        aria-valuemax="100"
-                      ></div>
+                    <div class="income-total">
+                      $345.00
                     </div>
                   </td>
 
                   <td>
-                    <a
-                      href="#"
-                      id="threePoint-btn_white-2"
-                      class="threePoint-btn_white"
-                      ><svg class="filterBtn">
-                        <use xlink:href="#triplePoint"></use>
-                      </svg></a>
-                      <div class="refferal__overlay" id="ref-over-2">
-                        <span class="romb_white"></span>
-                        <div class="refferal__modal">
-                          <ul>
-                            <li>
-                              <a href="#">
-                                <i class="addUser">
-                                  <svg class="filterBtn">
-                                    <use xlink:href="#addUser"></use>
-                                  </svg>
-                                </i>
-                                Add to contacts
-                              </a>
-                            </li>
-                            <li><span></span></li>
-                            <li>
-                              <a href="#">
-                                <i class="addUser">
-                                  <svg class="filterBtn">
-                                    <use xlink:href="#trashGrey"></use>
-                                  </svg>
-                                </i>
-                                Remove profile
-                              </a>
-                            </li>
-                            <li><span></span></li>
-                            <li class="disabled">
-                              <a href="#">
-                                <i class="addUser">
-                                  <svg class="filterBtn">
-                                    <use xlink:href="#printIcon"></use>
-                                  </svg>
-                                </i>
-                                Diasbled
-                              </a>
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
+                    <div class="income-total">
+                      May 2020
+                    </div>
+                  </td>
+
+                  <td>
+                    <div class="income-total">
+                      11.5
+                    </div>
+                  </td>
+
+                  <td>
+                    <div class="income-total">
+                      in 2 days
+                    </div>
+                  </td>
+
+                  <td>
+                    <div class="income-total">
+                      Aug 13, 2021
+                    </div>
+                  </td>
+
+
+                  <!-- <td>
+                    <a href="#" class="sources">http://www.zoomit.com</a>
+                  </td> -->
+
+
+                  <td>
+                    <span class="permissions permissions_moderator">
+                      Open
+                    </span>
                   </td>
                 </tr>
 
                 <tr>
                   <td>
-                    <div class="income-total">+200 LTC</div>
-                    <div class="income-user">Albert Flores</div>
+                    <div class="income-total">PepsiCo</div>
+                  </td>
+                  <td>
+                    <div class="income-total">DJ-003</div>
                   </td>
 
                   <td>
-                    <span class="permissions permissions_moderator"
-                      >Moderator</span
-                    >
-                  </td>
-
-                  <td>
-                    <a href="#" class="sources">http://www.groovestreet.com</a>
-                  </td>
-
-                  <td>
-                    <div>80% done</div>
-                    <div class="progress table__progress">
-                      <div
-                        class="progress-bar"
-                        style="width: 80%"
-                        role="progressbar"
-                        aria-valuenow="80"
-                        aria-valuemin="0"
-                        aria-valuemax="100"
-                      ></div>
+                    <div class="income-total">
+                      $345.00
                     </div>
                   </td>
 
                   <td>
-                    <a
-                      href="#"
-                      id="threePoint-btn_white-3"
-                      class="threePoint-btn_white"
-                      ><svg class="filterBtn">
-                        <use xlink:href="#triplePoint"></use>
-                      </svg></a>
-                      <div class="refferal__overlay" id="ref-over-3">
-                        <span class="romb_white"></span>
-                        <div class="refferal__modal">
-                          <ul>
-                            <li>
-                              <a href="#">
-                                <i class="addUser">
-                                  <svg class="filterBtn">
-                                    <use xlink:href="#addUser"></use>
-                                  </svg>
-                                </i>
-                                Add to contacts
-                              </a>
-                            </li>
-                            <li><span></span></li>
-                            <li>
-                              <a href="#">
-                                <i class="addUser">
-                                  <svg class="filterBtn">
-                                    <use xlink:href="#trashGrey"></use>
-                                  </svg>
-                                </i>
-                                Remove profile
-                              </a>
-                            </li>
-                            <li><span></span></li>
-                            <li class="disabled">
-                              <a href="#">
-                                <i class="addUser">
-                                  <svg class="filterBtn">
-                                    <use xlink:href="#printIcon"></use>
-                                  </svg>
-                                </i>
-                                Diasbled
-                              </a>
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
+                    <div class="income-total">
+                      May 2020
+                    </div>
+                  </td>
+
+                  <td>
+                    <div class="income-total">
+                      11.5
+                    </div>
+                  </td>
+
+                  <td>
+                    <div class="income-total">
+                      in 2 days
+                    </div>
+                  </td>
+
+                  <td>
+                    <div class="income-total">
+                      Aug 13, 2021
+                    </div>
+                  </td>
+
+
+                  <!-- <td>
+                    <a href="#" class="sources">http://www.zoomit.com</a>
+                  </td> -->
+
+
+                  <td>
+                    <span class="permissions permissions_admin">
+                      Open
+                    </span>
                   </td>
                 </tr>
 
                 <tr>
                   <td>
-                    <div class="income-total">+0.84756395 BTC</div>
-                    <div class="income-user">Cameron Williamson</div>
+                    <div class="income-total">PepsiCo</div>
+                  </td>
+                  <td>
+                    <div class="income-total">DJ-003</div>
                   </td>
 
                   <td>
-                    <span class="permissions permissions_admin"
-                      >Administrator</span
-                    >
-                  </td>
-
-                  <td>
-                    <a href="#" class="sources">http://www.dambase.com</a>
-                  </td>
-
-                  <td>
-                    <div>15% done</div>
-                    <div class="progress table__progress">
-                      <div
-                        class="progress-bar"
-                        style="width: 15%"
-                        role="progressbar"
-                        aria-valuenow="15"
-                        aria-valuemin="0"
-                        aria-valuemax="100"
-                      ></div>
+                    <div class="income-total">
+                      $345.00
                     </div>
                   </td>
 
                   <td>
-                    <a
-                      href="#"
-                      id="threePoint-btn_white-4"
-                      class="threePoint-btn_white"
-                      ><svg class="filterBtn">
-                        <use xlink:href="#triplePoint"></use>
-                      </svg></a>
-                      <div class="refferal__overlay" id="ref-over-4">
-                        <span class="romb_white"></span>
-                        <div class="refferal__modal">
-                          <ul>
-                            <li>
-                              <a href="#">
-                                <i class="addUser">
-                                  <svg class="filterBtn">
-                                    <use xlink:href="#addUser"></use>
-                                  </svg>
-                                </i>
-                                Add to contacts
-                              </a>
-                            </li>
-                            <li><span></span></li>
-                            <li>
-                              <a href="#">
-                                <i class="addUser">
-                                  <svg class="filterBtn">
-                                    <use xlink:href="#trashGrey"></use>
-                                  </svg>
-                                </i>
-                                Remove profile
-                              </a>
-                            </li>
-                            <li><span></span></li>
-                            <li class="disabled">
-                              <a href="#">
-                                <i class="addUser">
-                                  <svg class="filterBtn">
-                                    <use xlink:href="#printIcon"></use>
-                                  </svg>
-                                </i>
-                                Diasbled
-                              </a>
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
+                    <div class="income-total">
+                      May 2020
+                    </div>
+                  </td>
+
+                  <td>
+                    <div class="income-total">
+                      11.5
+                    </div>
+                  </td>
+
+                  <td>
+                    <div class="income-total">
+                      in 2 days
+                    </div>
+                  </td>
+
+                  <td>
+                    <div class="income-total">
+                      Aug 13, 2021
+                    </div>
+                  </td>
+
+
+                  <!-- <td>
+                    <a href="#" class="sources">http://www.zoomit.com</a>
+                  </td> -->
+
+
+                  <td>
+                    <span class="permissions permissions_user">
+                      Open
+                    </span>
                   </td>
                 </tr>
 
                 <tr>
                   <td>
-                    <div class="income-total">+21.8976 ETH</div>
-                    <div class="income-user">Eleanor Pena</div>
+                    <div class="income-total">PepsiCo</div>
+                  </td>
+                  <td>
+                    <div class="income-total">DJ-003</div>
                   </td>
 
                   <td>
-                    <span class="permissions permissions_user">User</span>
-                  </td>
-
-                  <td>
-                    <a href="#" class="sources">http://www.dambase.com</a>
-                  </td>
-
-                  <td>
-                    <div>72% done</div>
-                    <div class="progress table__progress">
-                      <div
-                        class="progress-bar"
-                        style="width: 72%"
-                        role="progressbar"
-                        aria-valuenow="72"
-                        aria-valuemin="0"
-                        aria-valuemax="100"
-                      ></div>
+                    <div class="income-total">
+                      $345.00
                     </div>
                   </td>
 
                   <td>
-                    <a
-                      href="#"
-                      id="threePoint-btn_white-5"
-                      class="threePoint-btn_white"
-                      ><svg class="filterBtn">
-                        <use xlink:href="#triplePoint"></use>
-                      </svg></a>
-                      <div class="refferal__overlay" id="ref-over-5">
-                        <span class="romb_white"></span>
-                        <div class="refferal__modal">
-                          <ul>
-                            <li>
-                              <a href="#">
-                                <i class="addUser">
-                                  <svg class="filterBtn">
-                                    <use xlink:href="#addUser"></use>
-                                  </svg>
-                                </i>
-                                Add to contacts
-                              </a>
-                            </li>
-                            <li><span></span></li>
-                            <li>
-                              <a href="#">
-                                <i class="addUser">
-                                  <svg class="filterBtn">
-                                    <use xlink:href="#trashGrey"></use>
-                                  </svg>
-                                </i>
-                                Remove profile
-                              </a>
-                            </li>
-                            <li><span></span></li>
-                            <li class="disabled">
-                              <a href="#">
-                                <i class="addUser">
-                                  <svg class="filterBtn">
-                                    <use xlink:href="#printIcon"></use>
-                                  </svg>
-                                </i>
-                                Diasbled
-                              </a>
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
+                    <div class="income-total">
+                      May 2020
+                    </div>
+                  </td>
+
+                  <td>
+                    <div class="income-total">
+                      11.5
+                    </div>
+                  </td>
+
+                  <td>
+                    <div class="income-total">
+                      in 2 days
+                    </div>
+                  </td>
+
+                  <td>
+                    <div class="income-total">
+                      Aug 13, 2021
+                    </div>
+                  </td>
+
+
+                  <!-- <td>
+                    <a href="#" class="sources">http://www.zoomit.com</a>
+                  </td> -->
+
+
+                  <td>
+                    <span class="permissions permissions_admin">
+                      Open
+                    </span>
                   </td>
                 </tr>
 
                 <tr>
                   <td>
-                    <div class="income-total">+1000 LTC</div>
-                    <div class="income-user">Brooklyn Simmons</div>
+                    <div class="income-total">PepsiCo</div>
+                  </td>
+                  <td>
+                    <div class="income-total">DJ-003</div>
                   </td>
 
                   <td>
-                    <span class="permissions permissions_user">User</span>
-                  </td>
-
-                  <td>
-                    <a href="#" class="sources">http://www.treequote.com</a>
-                  </td>
-
-                  <td>
-                    <div>60% done</div>
-                    <div class="progress table__progress">
-                      <div
-                        class="progress-bar"
-                        style="width: 60%"
-                        role="progressbar"
-                        aria-valuenow="60"
-                        aria-valuemin="0"
-                        aria-valuemax="100"
-                      ></div>
+                    <div class="income-total">
+                      $345.00
                     </div>
                   </td>
 
                   <td>
-                    <a
-                      href="#"
-                      id="threePoint-btn_white-6"
-                      class="threePoint-btn_white"
-                      ><svg class="filterBtn">
-                        <use xlink:href="#triplePoint"></use>
-                      </svg></a>
-                      <div class="refferal__overlay" id="ref-over-6">
-                        <span class="romb_white"></span>
-                        <div class="refferal__modal">
-                          <ul>
-                            <li>
-                              <a href="#">
-                                <i class="addUser">
-                                  <svg class="filterBtn">
-                                    <use xlink:href="#addUser"></use>
-                                  </svg>
-                                </i>
-                                Add to contacts
-                              </a>
-                            </li>
-                            <li><span></span></li>
-                            <li>
-                              <a href="#">
-                                <i class="addUser">
-                                  <svg class="filterBtn">
-                                    <use xlink:href="#trashGrey"></use>
-                                  </svg>
-                                </i>
-                                Remove profile
-                              </a>
-                            </li>
-                            <li><span></span></li>
-                            <li class="disabled">
-                              <a href="#">
-                                <i class="addUser">
-                                  <svg class="filterBtn">
-                                    <use xlink:href="#printIcon"></use>
-                                  </svg>
-                                </i>
-                                Diasbled
-                              </a>
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
+                    <div class="income-total">
+                      May 2020
+                    </div>
+                  </td>
+
+                  <td>
+                    <div class="income-total">
+                      11.5
+                    </div>
+                  </td>
+
+                  <td>
+                    <div class="income-total">
+                      in 2 days
+                    </div>
+                  </td>
+
+                  <td>
+                    <div class="income-total">
+                      Aug 13, 2021
+                    </div>
+                  </td>
+
+
+                  <!-- <td>
+                    <a href="#" class="sources">http://www.zoomit.com</a>
+                  </td> -->
+
+
+                  <td>
+                    <span class="permissions permissions_moderator">
+                      Open
+                    </span>
                   </td>
                 </tr>
 
                 <tr>
                   <td>
-                    <div class="income-total">+0.00004869 BTC</div>
-                    <div class="income-user">Guy Hawkins</div>
+                    <div class="income-total">PepsiCo</div>
+                  </td>
+                  <td>
+                    <div class="income-total">DJ-003</div>
                   </td>
 
                   <td>
-                    <span class="permissions permissions_admin"
-                      >Administrator</span
-                    >
-                  </td>
-
-                  <td>
-                    <a href="#" class="sources">http://www.toughzap.com</a>
-                  </td>
-
-                  <td>
-                    <div>85% done</div>
-                    <div class="progress table__progress">
-                      <div
-                        class="progress-bar"
-                        style="width: 85%"
-                        role="progressbar"
-                        aria-valuenow="85"
-                        aria-valuemin="0"
-                        aria-valuemax="100"
-                      ></div>
+                    <div class="income-total">
+                      $345.00
                     </div>
                   </td>
 
                   <td>
-                    <a
-                      href="#"
-                      id="threePoint-btn_white-7"
-                      class="threePoint-btn_white"
-                      ><svg class="filterBtn">
-                        <use xlink:href="#triplePoint"></use>
-                      </svg></a>
-                      <div class="refferal__overlay" id="ref-over-7">
-                        <span class="romb_white"></span>
-                        <div class="refferal__modal">
-                          <ul>
-                            <li>
-                              <a href="#">
-                                <i class="addUser">
-                                  <svg class="filterBtn">
-                                    <use xlink:href="#addUser"></use>
-                                  </svg>
-                                </i>
-                                Add to contacts
-                              </a>
-                            </li>
-                            <li><span></span></li>
-                            <li>
-                              <a href="#">
-                                <i class="addUser">
-                                  <svg class="filterBtn">
-                                    <use xlink:href="#trashGrey"></use>
-                                  </svg>
-                                </i>
-                                Remove profile
-                              </a>
-                            </li>
-                            <li><span></span></li>
-                            <li class="disabled">
-                              <a href="#">
-                                <i class="addUser">
-                                  <svg class="filterBtn">
-                                    <use xlink:href="#printIcon"></use>
-                                  </svg>
-                                </i>
-                                Diasbled
-                              </a>
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
+                    <div class="income-total">
+                      May 2020
+                    </div>
+                  </td>
+
+                  <td>
+                    <div class="income-total">
+                      11.5
+                    </div>
+                  </td>
+
+                  <td>
+                    <div class="income-total">
+                      in 2 days
+                    </div>
+                  </td>
+
+                  <td>
+                    <div class="income-total">
+                      Aug 13, 2021
+                    </div>
+                  </td>
+
+
+                  <!-- <td>
+                    <a href="#" class="sources">http://www.zoomit.com</a>
+                  </td> -->
+
+
+                  <td>
+                    <span class="permissions permissions_admin">
+                      Open
+                    </span>
                   </td>
                 </tr>
 
                 <tr>
                   <td>
-                    <div class="income-total">+1.89483765 BTC</div>
-                    <div class="income-user">Jerome Bell</div>
+                    <div class="income-total">PepsiCo</div>
+                  </td>
+                  <td>
+                    <div class="income-total">DJ-003</div>
                   </td>
 
                   <td>
-                    <span class="permissions permissions_moderator"
-                      >Moderator</span
-                    >
-                  </td>
-
-                  <td>
-                    <a href="#" class="sources">http://www.conecom.com</a>
-                  </td>
-
-                  <td>
-                    <div>97% done</div>
-                    <div class="progress table__progress">
-                      <div
-                        class="progress-bar"
-                        style="width: 97%"
-                        role="progressbar"
-                        aria-valuenow="97"
-                        aria-valuemin="0"
-                        aria-valuemax="100"
-                      ></div>
+                    <div class="income-total">
+                      $345.00
                     </div>
                   </td>
 
                   <td>
-                    <a
-                      href="#"
-                      id="threePoint-btn_white-8"
-                      class="threePoint-btn_white"
-                      ><svg class="filterBtn">
-                        <use xlink:href="#triplePoint"></use>
-                      </svg></a>
-                    <div class="refferal__overlay" id="ref-over-8">
-                      <span class="romb_white"></span>
-                      <div class="refferal__modal">
-                        <ul>
-                          <li>
-                            <a href="#">
-                              <i class="addUser">
-                                <svg class="filterBtn">
-                                  <use xlink:href="#addUser"></use>
-                                </svg>
-                              </i>
-                              Add to contacts
-                            </a>
-                          </li>
-                          <li><span></span></li>
-                          <li>
-                            <a href="#">
-                              <i class="addUser">
-                                <svg class="filterBtn">
-                                  <use xlink:href="#trashGrey"></use>
-                                </svg>
-                              </i>
-                              Remove profile
-                            </a>
-                          </li>
-                          <li><span></span></li>
-                          <li class="disabled">
-                            <a href="#">
-                              <i class="addUser">
-                                <svg class="filterBtn">
-                                  <use xlink:href="#printIcon"></use>
-                                </svg>
-                              </i>
-                              Diasbled
-                            </a>
-                          </li>
-                        </ul>
-                      </div>
+                    <div class="income-total">
+                      May 2020
                     </div>
+                  </td>
+
+                  <td>
+                    <div class="income-total">
+                      11.5
+                    </div>
+                  </td>
+
+                  <td>
+                    <div class="income-total">
+                      in 2 days
+                    </div>
+                  </td>
+
+                  <td>
+                    <div class="income-total">
+                      Aug 13, 2021
+                    </div>
+                  </td>
+
+
+                  <!-- <td>
+                    <a href="#" class="sources">http://www.zoomit.com</a>
+                  </td> -->
+
+
+                  <td>
+                    <span class="permissions permissions_user">
+                      Open
+                    </span>
                   </td>
                 </tr>
 
                 <tr>
                   <td>
-                    <div class="income-total">+1 BTC</div>
-                    <div class="income-user">Jacob Jones</div>
+                    <div class="income-total">PepsiCo</div>
+                  </td>
+                  <td>
+                    <div class="income-total">DJ-003</div>
                   </td>
 
                   <td>
-                    <span class="permissions permissions_user">User</span>
-                  </td>
-
-                  <td>
-                    <a href="#" class="sources">http://www.konmatfix.com</a>
-                  </td>
-
-                  <td>
-                    <div>10% done</div>
-                    <div class="progress table__progress">
-                      <div
-                        class="progress-bar"
-                        style="width: 10%"
-                        role="progressbar"
-                        aria-valuenow="10"
-                        aria-valuemin="0"
-                        aria-valuemax="100"
-                      ></div>
+                    <div class="income-total">
+                      $345.00
                     </div>
                   </td>
 
                   <td>
-                    <a
-                      href="#"
-                      id="threePoint-btn_white-9"
-                      class="threePoint-btn_white"
-                      ><svg class="filterBtn">
-                        <use xlink:href="#triplePoint"></use>
-                      </svg></a>
-                      <div class="refferal__overlay" id="ref-over-9">
-                        <span class="romb_white"></span>
-                        <div class="refferal__modal">
-                          <ul>
-                            <li>
-                              <a href="#">
-                                <i class="addUser">
-                                  <svg class="filterBtn">
-                                    <use xlink:href="#addUser"></use>
-                                  </svg>
-                                </i>
-                                Add to contacts
-                              </a>
-                            </li>
-                            <li><span></span></li>
-                            <li>
-                              <a href="#">
-                                <i class="addUser">
-                                  <svg class="filterBtn">
-                                    <use xlink:href="#trashGrey"></use>
-                                  </svg>
-                                </i>
-                                Remove profile
-                              </a>
-                            </li>
-                            <li><span></span></li>
-                            <li class="disabled">
-                              <a href="#">
-                                <i class="addUser">
-                                  <svg class="filterBtn">
-                                    <use xlink:href="#printIcon"></use>
-                                  </svg>
-                                </i>
-                                Diasbled
-                              </a>
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
+                    <div class="income-total">
+                      May 2020
+                    </div>
+                  </td>
+
+                  <td>
+                    <div class="income-total">
+                      11.5
+                    </div>
+                  </td>
+
+                  <td>
+                    <div class="income-total">
+                      in 2 days
+                    </div>
+                  </td>
+
+                  <td>
+                    <div class="income-total">
+                      Aug 13, 2021
+                    </div>
+                  </td>
+
+
+                  <!-- <td>
+                    <a href="#" class="sources">http://www.zoomit.com</a>
+                  </td> -->
+
+
+                  <td>
+                    <span class="permissions permissions_admin">
+                      Open
+                    </span>
                   </td>
                 </tr>
 
                 <tr>
                   <td>
-                    <div class="income-total">+0.24 ETH</div>
-                    <div class="income-user">Esther Howard</div>
+                    <div class="income-total">PepsiCo</div>
+                  </td>
+                  <td>
+                    <div class="income-total">DJ-003</div>
                   </td>
 
                   <td>
-                    <span class="permissions permissions_user">User</span>
-                  </td>
-
-                  <td>
-                    <a href="#" class="sources">http://www.labdrill.com</a>
-                  </td>
-
-                  <td>
-                    <div>27% done</div>
-                    <div class="progress table__progress">
-                      <div
-                        class="progress-bar"
-                        style="width: 27%"
-                        role="progressbar"
-                        aria-valuenow="27"
-                        aria-valuemin="0"
-                        aria-valuemax="100"
-                      ></div>
+                    <div class="income-total">
+                      $345.00
                     </div>
                   </td>
 
                   <td>
-                    <a
-                      href="#"
-                      id="threePoint-btn_white-10"
-                      class="threePoint-btn_white"
-                      ><svg class="filterBtn">
-                        <use xlink:href="#triplePoint"></use>
-                      </svg></a>
-                    <div class="refferal__overlay" id="ref-over-10">
-                      <span class="romb_white"></span>
-                      <div class="refferal__modal">
-                        <ul>
-                          <li>
-                            <a href="#">
-                              <i class="addUser">
-                                <svg class="filterBtn">
-                                  <use xlink:href="#addUser"></use>
-                                </svg>
-                              </i>
-                              Add to contacts
-                            </a>
-                          </li>
-                          <li><span></span></li>
-                          <li>
-                            <a href="#">
-                              <i class="addUser">
-                                <svg class="filterBtn">
-                                  <use xlink:href="#trashGrey"></use>
-                                </svg>
-                              </i>
-                              Remove profile
-                            </a>
-                          </li>
-                          <li><span></span></li>
-                          <li class="disabled">
-                            <a href="#">
-                              <i class="addUser">
-                                <svg class="filterBtn">
-                                  <use xlink:href="#printIcon"></use>
-                                </svg>
-                              </i>
-                              Diasbled
-                            </a>
-                          </li>
-                        </ul>
-                      </div>
+                    <div class="income-total">
+                      May 2020
                     </div>
+                  </td>
+
+                  <td>
+                    <div class="income-total">
+                      11.5
+                    </div>
+                  </td>
+
+                  <td>
+                    <div class="income-total">
+                      in 2 days
+                    </div>
+                  </td>
+
+                  <td>
+                    <div class="income-total">
+                      Aug 13, 2021
+                    </div>
+                  </td>
+
+
+                  <!-- <td>
+                    <a href="#" class="sources">http://www.zoomit.com</a>
+                  </td> -->
+
+
+                  <td>
+                    <span class="permissions permissions_moderator">
+                      Open
+                    </span>
                   </td>
                 </tr>
 
                 <tr>
                   <td>
-                    <div class="income-total">+1.89483765 BTC</div>
-                    <div class="income-user">Ronald Richards</div>
+                    <div class="income-total">PepsiCo</div>
+                  </td>
+                  <td>
+                    <div class="income-total">DJ-003</div>
                   </td>
 
                   <td>
-                    <span class="permissions permissions_admin"
-                      >Administrator</span
-                    >
-                  </td>
-
-                  <td>
-                    <a href="#" class="sources">http://www.donware.com</a>
-                  </td>
-
-                  <td>
-                    <div>45% done</div>
-                    <div class="progress table__progress">
-                      <div
-                        class="progress-bar"
-                        style="width: 45%"
-                        role="progressbar"
-                        aria-valuenow="45"
-                        aria-valuemin="0"
-                        aria-valuemax="100"
-                      ></div>
+                    <div class="income-total">
+                      $345.00
                     </div>
                   </td>
 
                   <td>
-                    <a
-                      href="#"
-                      id="threePoint-btn_white-11"
-                      class="threePoint-btn_white"
-                      ><svg class="filterBtn">
-                        <use xlink:href="#triplePoint"></use>
-                      </svg></a>
-                      <div class="refferal__overlay" id="ref-over-11">
-                        <span class="romb_white"></span>
-                        <div class="refferal__modal">
-                          <ul>
-                            <li>
-                              <a href="#">
-                                <i class="addUser">
-                                  <svg class="filterBtn">
-                                    <use xlink:href="#addUser"></use>
-                                  </svg>
-                                </i>
-                                Add to contacts
-                              </a>
-                            </li>
-                            <li><span></span></li>
-                            <li>
-                              <a href="#">
-                                <i class="addUser">
-                                  <svg class="filterBtn">
-                                    <use xlink:href="#trashGrey"></use>
-                                  </svg>
-                                </i>
-                                Remove profile
-                              </a>
-                            </li>
-                            <li><span></span></li>
-                            <li class="disabled">
-                              <a href="#">
-                                <i class="addUser">
-                                  <svg class="filterBtn">
-                                    <use xlink:href="#printIcon"></use>
-                                  </svg>
-                                </i>
-                                Diasbled
-                              </a>
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
+                    <div class="income-total">
+                      May 2020
+                    </div>
+                  </td>
+
+                  <td>
+                    <div class="income-total">
+                      11.5
+                    </div>
+                  </td>
+
+                  <td>
+                    <div class="income-total">
+                      in 2 days
+                    </div>
+                  </td>
+
+                  <td>
+                    <div class="income-total">
+                      Aug 13, 2021
+                    </div>
+                  </td>
+
+
+                  <!-- <td>
+                    <a href="#" class="sources">http://www.zoomit.com</a>
+                  </td> -->
+
+
+                  <td>
+                    <span class="permissions permissions_admin">
+                      Open
+                    </span>
                   </td>
                 </tr>
+
+                <tr>
+                  <td>
+                    <div class="income-total">PepsiCo</div>
+                  </td>
+                  <td>
+                    <div class="income-total">DJ-003</div>
+                  </td>
+
+                  <td>
+                    <div class="income-total">
+                      $345.00
+                    </div>
+                  </td>
+
+                  <td>
+                    <div class="income-total">
+                      May 2020
+                    </div>
+                  </td>
+
+                  <td>
+                    <div class="income-total">
+                      11.5
+                    </div>
+                  </td>
+
+                  <td>
+                    <div class="income-total">
+                      in 2 days
+                    </div>
+                  </td>
+
+                  <td>
+                    <div class="income-total">
+                      Aug 13, 2021
+                    </div>
+                  </td>
+
+
+                  <!-- <td>
+                    <a href="#" class="sources">http://www.zoomit.com</a>
+                  </td> -->
+
+
+                  <td>
+                    <span class="permissions permissions_user">
+                      Open
+                    </span>
+                  </td>
+                </tr>
+
+                
               </tbody>
             </table>
             <!-- Refferal table -->

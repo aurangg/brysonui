@@ -145,9 +145,25 @@
     background: #20c933;
 }
 .color-white{
-    color:white;
+    color:white !important;
 }
 .no-height{
     height:auto !important;
     overflow: auto;
+}
+.text-adjustment{
+    font-family: "Inter";
+font-style: normal;
+font-weight: 600;
+line-height: 27px;
+letter-spacing: -0.277738px;
+}
+.text-style-1{
+font-family: "Inter";
+font-style: normal;
+font-weight: bold;
+font-size: 28px;
+line-height: 34px;
+letter-spacing: -2px;
+color: #000000;
 }

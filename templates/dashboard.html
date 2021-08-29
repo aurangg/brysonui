@@ -196,6 +196,7 @@
           </defs>
     </svg>
     <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/new.css" />
   </head>
   <body>
     <div id="wrapper">
@@ -604,953 +605,422 @@
       </div>
       <!-- Header top bar -->
 
-      <!-- Main section -->
-      <section id="content-wrapper">
+       <!-- Main section -->
+       <section id="content-wrapper">
         <div class="container-fluid">
           <div class="dashboard__title d-flex justify-content-between">
-            <h1 class="page-title">Dashboard</h1>
+            <h1 class="page-title">Accounts</h1>
+            <div class="top-btn">
+              <button class="grey-btn">New Account</button>
+              <button class="blue-btn">Move Money</button>
+            </div>
           </div>
-
           <div class="row justify-content-between">
-            <!-- Daily visits -->
-            <div class="col-xl-4">
-              <div class="card card__two">
-                <div class="card-body">
-                  <div class="revenue__header d-flex justify-content-between">
-                    <div
-                      class="revenue__title revenue__title_two d-flex justify-content-between align-items-center daily"
-                    >
-                      <h2 class="card__total card__h2 m-0">Daily visits</h2>
-                      
-                    </div>
+            <div class="col-lg-12">
+              <div class="mt-3 flex-align-start">
+                <div class="currency-box justify-center-align">
+                  <img class="dollar-img" src="../img/dollar-currency-symbol.svg" alt="">
+                </div>
+                <div class="ml-10-x">
+                  <div class="dashboard__title">
+                    <h1 class="page-title">$10,000</h1>
                   </div>
-                  <div class="card__graphic card__graphic3">
-                    <div id="visitChart"></div>
-                  </div>
+                  <p class="account-info">Total balance in USD</p>
                 </div>
               </div>
             </div>
-            <!-- Daily visits -->
-
-            <!-- Sales heatmap -->
-            <div class="col-xl-8">
-              <div class="card card__two card__three">
-                <div class="card-body heatmap-body">
-                  <div class="revenue__header d-flex justify-content-between">
-                    <div class="revenue__title d-flex align-items-center">
-                      <h2 class="m-0">Sales heatmap</h2>
-                    </div>
-                    <div
-                      id="reportrange2"
-                      class="calendar-wrapper d-flex align-items-center"
-                    >
-                      <i class="date-picker_1ver date-picker_2ver">
-                        <svg
-                          width="16"
-                          height="16"
-                          viewBox="0 0 16 16"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M11.75 2.25H14.75C14.9489 2.25 15.1397 2.32902 15.2803 2.46967C15.421 2.61032 15.5 2.80109 15.5 3V15C15.5 15.1989 15.421 15.3897 15.2803 15.5303C15.1397 15.671 14.9489 15.75 14.75 15.75H1.25C1.05109 15.75 0.860322 15.671 0.71967 15.5303C0.579018 15.3897 0.5 15.1989 0.5 15V3C0.5 2.80109 0.579018 2.61032 0.71967 2.46967C0.860322 2.32902 1.05109 2.25 1.25 2.25H4.25V0.75H5.75V2.25H10.25V0.75H11.75V2.25ZM10.25 3.75H5.75V5.25H4.25V3.75H2V6.75H14V3.75H11.75V5.25H10.25V3.75ZM14 8.25H2V14.25H14V8.25Z"
-                          />
-                        </svg>
-                      </i>
-                      <span></span> <b class="caret"></b>
-                    </div>
-                  </div>
-                  <div class="card__graphic">
-                    <div id="heatmap"></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- Sales heatmap -->
-
-            <!-- Revenue chart 2 -->
-            <div class="col-xl-8">
-              <div class="card card__two card__three">
-                <div class="card-body revenue">
-                  <div class="revenue__header d-flex justify-content-between">
-                    <div class="revenue__title d-flex align-items-center">
-                      <h2 class="m-0">Revenue</h2>
-                     
-                    </div>
-                    <div
-                      id="reportrange3"
-                      class="calendar-wrapper d-flex align-items-center"
-                    >
-                      <i class="date-picker_1ver date-picker_2ver">
-                        <svg
-                          width="16"
-                          height="16"
-                          viewBox="0 0 16 16"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M11.75 2.25H14.75C14.9489 2.25 15.1397 2.32902 15.2803 2.46967C15.421 2.61032 15.5 2.80109 15.5 3V15C15.5 15.1989 15.421 15.3897 15.2803 15.5303C15.1397 15.671 14.9489 15.75 14.75 15.75H1.25C1.05109 15.75 0.860322 15.671 0.71967 15.5303C0.579018 15.3897 0.5 15.1989 0.5 15V3C0.5 2.80109 0.579018 2.61032 0.71967 2.46967C0.860322 2.32902 1.05109 2.25 1.25 2.25H4.25V0.75H5.75V2.25H10.25V0.75H11.75V2.25ZM10.25 3.75H5.75V5.25H4.25V3.75H2V6.75H14V3.75H11.75V5.25H10.25V3.75ZM14 8.25H2V14.25H14V8.25Z"
-                          />
-                        </svg>
-                      </i>
-                      <span></span> <b class="caret"></b>
-                    </div>
-                  </div>
-                  <div class="card__graphic">
-                    <div id="barsChart"></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- Revenue chart 2-->
-
-            <!-- Add widget -->
-            <div class="col-xl-4">
-              <div class="card card__two">
-                <div class="card-body">
-                  <div class="card-image card-image_add mx-auto">
-                    <img src="../img/addWidgetBG.png" alt="Add widget" />
-                  </div>
-                  <div class="card-title text-center">
-                    Add your first widget
-                  </div>
-                  <div class="card-subtitle text-center">
-                    Customize your dashboard as you need
-                  </div>
-                  <div class="card-button">
-                    <button
-                      type="button"
-                      class="btn__add"
-                      data-toggle="modal"
-                      data-target="#exampleModalCenter"
-                    >
-                      <span>
-                        <svg
-                          width="11"
-                          height="12"
-                          viewBox="0 0 11 12"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M10.75 5.25H6.25V0.75H4.75V5.25H0.25V6.75H4.75V11.25H6.25V6.75H10.75V5.25Z"
-                          />
-                        </svg> </span
-                      >Add widget
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Add widget modal -->
-            <div
-              class="modal fade new-widget__modal"
-              id="exampleModalCenter"
-              tabindex="-1"
-              role="dialog"
-              aria-labelledby="exampleModalCenterTitle"
-              aria-hidden="true"
-            >
-              <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-content new-widget">
-                  <buttons
-                    class="close"
-                    data-dismiss="modal"
-                    aria-label="Close"
-                  ></buttons>
-                  <div class="new-widget__title">Add widget</div>
-
-                  <ul class="nav nav-pills" id="pills-tab" role="tablist">
-                    <li class="nav-item">
-                      <a
-                        href="#bar-graph"
-                        class="nav-link active new-widget__buttons"
-                        data-toggle="pill"
-                        id="bar-graph-tab"
-                        role="tab"
-                        aria-controls="bar-graph"
-                        aria-selected="true"
-                        >Bar graph</a
-                      >
-                    </li>
-                    <li class="nav-item">
-                      <a
-                        href="#segmented"
-                        class="nav-link new-widget__buttons"
-                        data-toggle="pill"
-                        id="segmented-tab"
-                        role="tab"
-                        aria-controls="segmented"
-                        aria-selected="false"
-                        >Segmented</a
-                      >
-                    </li>
-                    <li class="nav-item">
-                      <a
-                        href="#frequency"
-                        class="nav-link new-widget__buttons"
-                        data-toggle="pill"
-                        id="frequency-tab"
-                        role="tab"
-                        aria-controls="frequency"
-                        aria-selected="false"
-                        >Frequency</a
-                      >
-                    </li>
-                    <li class="nav-item">
-                      <a
-                        href="#histogram"
-                        class="nav-link new-widget__buttons"
-                        data-toggle="pill"
-                        id="histogram-tab"
-                        role="tab"
-                        aria-controls="histogram"
-                        aria-selected="false"
-                        >Histogram</a
-                      >
-                    </li>
-                  </ul>
-
-                  <div class="tab-content" id="pills-tabContent">
-                    <div
-                      class="tab-pane fade show active"
-                      id="bar-graph"
-                      role="tabpanel"
-                      aria-labelledby="bar-graph-tab"
-                    >
-                      <div class="container-fluid">
-                        <div class="row m-0 new-widget__block">
-                          <div class="new-widget__image">
-                            <a href="#"
-                              ><img src="../img/dougnutChart.png" alt=""
-                            /></a>
-                          </div>
-                          <div class="new-widget__image">
-                            <a href="#"
-                              ><img src="../img/radialChart.png" alt=""
-                            /></a>
-                          </div>
-                        </div>
-
-                        <div class="row new-widget__block">
-                          <div class="new-widget__image">
-                            <a href="#"
-                              ><img src="../img/lineChart.png" alt=""
-                            /></a>
-                          </div>
-                          <div class="new-widget__image">
-                            <a href="#"><img src="../img/gant.png" alt="" /></a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div
-                      class="tab-pane fade"
-                      id="segmented"
-                      role="tabpanel"
-                      aria-labelledby="segmented-tab"
-                    >
-                      ...
-                    </div>
-
-                    <div
-                      class="tab-pane fade"
-                      id="frequency"
-                      role="tabpanel"
-                      aria-labelledby="frequency-tab"
-                    >
-                      ..
-                    </div>
-
-                    <div
-                      class="tab-pane fade"
-                      id="histogram"
-                      role="tabpanel"
-                      aria-labelledby="histogram-tab"
-                    >
-                      ...
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- Add widget modal -->
-
-            <!-- Add widget -->
-          </div>
-
-          <!-- Modal-User profile -->
-          <div
-            class="modal right fade"
-            data-backdrop="static"
-            id="userProfile"
-            tabindex="-1"
-            role="dialog"
-          >
-            <div class="modal-dialog" role="document">
-              <div class="modal-userProfile modal-content">
-                <div class="modal-userProfile__title">
-                  User profile
-                  <button
-                    type="button"
-                    class="close"
-                    data-dismiss="modal"
-                    aria-label="Close"
-                  >
-                    <span aria-hidden="true"></span>
-                  </button>
-                </div>
-
-                <div class="modal-userProfile__line"></div>
-                <div class="modal-userProfile__image">
-                  <img src="../img/darrellSteward.png" alt="User image" />
-                </div>
-                <div class="modal-userProfile__name">Darrell Steward</div>
-                <div class="modal-userProfile__jobTitle">
-                  Manager @ craftwork.design
-                </div>
-                <div class="modal-userProfile__buttons">
-                  <a
-                    href="#"
-                    class="btn btn__blue"
-                    data-toggle="modal"
-                    data-target="#editModal"
-                    >Edit user profile</a
-                  >
-                  <a
-                    href="#"
-                    class="btn btn__cancel"
-                    data-toggle="modal"
-                    data-target="#removeModal"
-                    >Remove profile</a
-                  >
-                </div>
-
-                <ul
-                  class="nav nav-pills mb-3 new-profile__tabs"
-                  id="pills-tab"
-                  role="tablist"
-                >
-                  <li class="nav-item">
-                    <a
-                      class="nav-link active"
-                      id="pills-service-tab"
-                      data-toggle="pill"
-                      href="#pills-service"
-                      role="tab"
-                      aria-controls="pills-service"
-                      aria-selected="true"
-                      >Service information</a
-                    >
-                  </li>
-                  <li class="nav-item">
-                    <a
-                      class="nav-link"
-                      id="pills-attached-tab"
-                      data-toggle="pill"
-                      href="#pills-attached"
-                      role="tab"
-                      aria-controls="pills-attached"
-                      aria-selected="false"
-                      >Attached files</a
-                    >
-                  </li>
-                  <li class="nav-item">
-                    <a
-                      class="nav-link"
-                      id="pills-permissions-tab"
-                      data-toggle="pill"
-                      href="#pills-permissions"
-                      role="tab"
-                      aria-controls="pills-permissions"
-                      aria-selected="false"
-                      >Permissions</a
-                    >
-                  </li>
-                </ul>
-
-                <div class="custom-selectpicker" name="selValue">
-                  <select class="selectpicker" data-actionsbox="true">
-                    <option>
-                      <a href="#">Service information</a>
-                    </option>
-                    <option>
-                      <a href="#">Attached files</a>
-                    </option>
-                    <option>
-                      <a href="#">Permissions</a>
-                    </option>
-                  </select>
-                </div>
-
-                <div class="info-line"></div>
-                <div class="info-bigLine"></div>
-
-                <div class="tab-content" id="pills-tabContent">
-                  <div
-                    class="tab-pane fade show active"
-                    id="pills-service"
-                    role="tabpanel"
-                    aria-labelledby="pills-service-tab"
-                  >
-                    <div class="modal-userProfile__blockTitle">
-                      <i class="personal-icon">
-                        <svg
-                          width="14"
-                          height="14"
-                          viewBox="0 0 14 14"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M4.375 3.79166C4.375 5.23891 5.55275 6.41666 7 6.41666C8.44725 6.41666 9.625 5.23891 9.625 3.79166C9.625 2.34441 8.44725 1.16666 7 1.16666C5.55275 1.16666 4.375 2.34441 4.375 3.79166ZM11.6667 12.25H12.25V11.6667C12.25 9.41557 10.4177 7.58332 8.16667 7.58332H5.83333C3.58167 7.58332 1.75 9.41557 1.75 11.6667V12.25H11.6667Z"
-                            fill="white"
-                          />
-                        </svg>
-                      </i>
-                      Personal data
-                    </div>
-
-                    <div class="row modal-userProfile__form">
-                      <div class="form-group">
-                        <label for="phone">Phone</label>
-                        <div class="input-group">
-                          <input id="phone" type="tel" class="form-control" />
-                        </div>
-                      </div>
-
-                      <div class="form-group">
-                        <label>Role</label>
-                        <select class="custom-select" id="inputGroupSelect02">
-                          <option selected>Input text</option>
-                          <option value="1">One</option>
-                          <option value="2">Two</option>
-                          <option value="3">Three</option>
-                        </select>
-                      </div>
-                      <div class="form-group form__surname">
-                        <label for="company">Company</label>
-                        <div class="input-group">
-                          <input
-                            id="company"
-                            type="text"
-                            class="form-control"
-                          />
-                        </div>
-                      </div>
-                      <div class="form-group form__phone2">
-                        <label for="phone2">Phone</label>
-                        <div class="input-group phone2">
-                          <input
-                            id="phone2"
-                            type="number"
-                            placeholder="Disabled"
-                            class="form-control"
-                            disabled
-                          />
-                        </div>
-                      </div>
+             <!-- Compare -->
+              <!-- <div class="col-xl-3 col-md-6">
+                <div class="card">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-center">
+                      <h3 class="card__title d-flex align m-0">Visits</h3>
                       <div
-                        class="modal-userProfile__bigLine modal-userProfile__bigLine_two"
+                        class="card__percentage d-flex justify-content-between align-items-center"
+                      >
+                        <div class="card__percent">4.2%</div>
+                        <i class="up-arrow"><svg class="icon"><use xlink:href="#greenTopArrow"></use></svg></i>
+                      </div>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-start">
+                      <div class="card__total">2 345</div>
+                      <div class="card__date">vs last week</div>
+                    </div>
+                    <div
+                      class="d-flex justify-content-between align-items-center card-block"
+                    >
+                      <div class="d-block compare">
+                        <div class="d-flex align-items-center">
+                          <span class="d-flex">
+                            <svg
+                              width="10"
+                              height="14"
+                              viewBox="0 0 10 14"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M1.66666 1.66665V12.3333H8.33333V1.66665H1.66666ZM0.999995 0.333317H9C9.17681 0.333317 9.34638 0.403555 9.4714 0.528579C9.59643 0.653603 9.66666 0.823173 9.66666 0.999984V13C9.66666 13.1768 9.59643 13.3464 9.4714 13.4714C9.34638 13.5964 9.17681 13.6667 9 13.6667H0.999995C0.823184 13.6667 0.653615 13.5964 0.528591 13.4714C0.403566 13.3464 0.333328 13.1768 0.333328 13V0.999984C0.333328 0.823173 0.403566 0.653603 0.528591 0.528579C0.653615 0.403555 0.823184 0.333317 0.999995 0.333317ZM5 10.3333C5.17681 10.3333 5.34638 10.4036 5.4714 10.5286C5.59642 10.6536 5.66666 10.8232 5.66666 11C5.66666 11.1768 5.59642 11.3464 5.4714 11.4714C5.34638 11.5964 5.17681 11.6667 5 11.6667C4.82318 11.6667 4.65362 11.5964 4.52859 11.4714C4.40357 11.3464 4.33333 11.1768 4.33333 11C4.33333 10.8232 4.40357 10.6536 4.52859 10.5286C4.65362 10.4036 4.82318 10.3333 5 10.3333Z"
+                                fill="black"
+                              />
+                            </svg>
+                          </span>
+                          <div class="ml-2 compare__title">Mobile</div>
+                        </div>
+                        <div class="compare__percent">28%</div>
+                        <div class="compare__total">1 422</div>
+                      </div>
+
+                      <div class="d-block text-center">
+                        <span class="d-block vertical-line"></span>
+                        <span class="vertical-circle">VS</span>
+                        <span class="d-block vertical-line"></span>
+                      </div>
+
+                      <div class="d-block compare">
+                        <div class="d-flex align-items-center justify-content-end">
+                          <div class="mr-2 compare__title">Desktop</div>
+                          <span class="d-flex">
+                            <svg
+                              width="14"
+                              height="13"
+                              viewBox="0 0 14 13"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M1.66667 8.66667H12.3333V1.33333H1.66667V8.66667ZM7.66667 10V11.3333H10.3333V12.6667H3.66667V11.3333H6.33334V10H0.994674C0.907131 9.99948 0.820552 9.98168 0.739899 9.94764C0.659246 9.91359 0.586105 9.86396 0.524668 9.8016C0.463231 9.73923 0.414706 9.66535 0.381874 9.5842C0.349042 9.50304 0.332549 9.41621 0.33334 9.32867V0.671333C0.33334 0.300667 0.636674 0 0.994674 0H13.0053C13.3707 0 13.6667 0.299333 13.6667 0.671333V9.32867C13.6667 9.69933 13.3633 10 13.0053 10H7.66667Z"
+                                fill="black"
+                              />
+                            </svg>
+                          </span>
+                        </div>
+                        <div class="compare__percent text-right">72%</div>
+                        <div class="compare__total text-right">2 422</div>
+                      </div>
+                    </div>
+
+                    <div class="progress">
+                      <div
+                        class="progress-bar"
+                        role="progressbar"
+                        style="width: 28%"
+                        aria-valuenow="28"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      ></div>
+                      <div
+                        class="progress-bar"
+                        role="progressbar"
+                        style="width: 72%"
+                        aria-valuenow="72"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
                       ></div>
                     </div>
+                  </div>
+                </div>
+              </div> -->
+              <!-- Compare -->
 
+            <div class="col-xl-3 col-md-6">
+              <div class="card areaWidget no-height-responsive">
+                <div class="card-body">
+                  <div
+                    class="card__heading d-flex justify-content-between align-items-center"
+                  >
+                    <h3 class="card__title d-flex align m-0">BTC Wallet</h3>
                     <div
-                      class="modal-userProfile__blockTitle modal-userProfile__blockTitle2"
+                      class="card__percentage d-flex justify-content-between align-items-center"
                     >
-                      <i class="stats-icon">
-                        <svg
-                          width="14"
-                          height="14"
-                          viewBox="0 0 14 14"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M3.50033 12.25H1.75033C1.59562 12.25 1.44724 12.1885 1.33785 12.0791C1.22845 11.9698 1.16699 11.8214 1.16699 11.6667V7C1.16699 6.84529 1.22845 6.69692 1.33785 6.58752C1.44724 6.47813 1.59562 6.41667 1.75033 6.41667H3.50033C3.65504 6.41667 3.80341 6.47813 3.9128 6.58752C4.0222 6.69692 4.08366 6.84529 4.08366 7V11.6667C4.08366 11.8214 4.0222 11.9698 3.9128 12.0791C3.80341 12.1885 3.65504 12.25 3.50033 12.25ZM7.58366 12.25H5.83366C5.67895 12.25 5.53058 12.1885 5.42118 12.0791C5.31178 11.9698 5.25033 11.8214 5.25033 11.6667V1.75C5.25033 1.59529 5.31178 1.44692 5.42118 1.33752C5.53058 1.22813 5.67895 1.16667 5.83366 1.16667H7.58366C7.73837 1.16667 7.88674 1.22813 7.99614 1.33752C8.10553 1.44692 8.16699 1.59529 8.16699 1.75V11.6667C8.16699 11.8214 8.10553 11.9698 7.99614 12.0791C7.88674 12.1885 7.73837 12.25 7.58366 12.25ZM11.667 12.25H9.91699C9.76228 12.25 9.61391 12.1885 9.50451 12.0791C9.39512 11.9698 9.33366 11.8214 9.33366 11.6667V5.25C9.33366 5.09529 9.39512 4.94692 9.50451 4.83752C9.61391 4.72813 9.76228 4.66667 9.91699 4.66667H11.667C11.8217 4.66667 11.9701 4.72813 12.0795 4.83752C12.1889 4.94692 12.2503 5.09529 12.2503 5.25V11.6667C12.2503 11.8214 12.1889 11.9698 12.0795 12.0791C11.9701 12.1885 11.8217 12.25 11.667 12.25Z"
-                            fill="white"
-                          />
-                        </svg>
-                      </i>
-                      Productivity stats
+                      <div class="card__percent">4.2%</div>
+                      <i class="up-arrow"><svg class="icon"><use xlink:href="#greenTopArrow"></use></svg></i>
                     </div>
-
-                    <!-- Gant -->
-                    <div class="w-100">
-                      <div class="card w-100">
-                        <div class="card-body">
-                          <div class="d-flex justify-content-between align-items-center">
-                            <h3 class="card__title d-flex align m-0">
-                              Today productivity
-                            </h3>
-                            <div
-                              class="card__percentage d-flex justify-content-between align-items-center"
-                            >
-                              <div class="card__percent">0%</div>
-                              <i class="minus-arrow"><svg class="icon"><use xlink:href="#minusCircle"></use></svg></i>
-                            </div>
-                          </div>
-          
-                          <div class="d-flex justify-content-between align-items-start">
-                            <div class="card__total">5 hr 24 m</div>
-                            <div class="card__date">vs last week</div>
-                          </div>
-          
-                          <div class="timetable timetable__weeks">
-                            <ul>
-                              <li>Mon</li>
-                              <li>Tue</li>
-                              <li>Wed</li>
-                              <li>Thu</li>
-                              <li>Fri</li>
-                              <li>Sat</li>
-                              <li>Sun</li>
-                            </ul>
-                            <div class="d-block timetable__color">
-                              <ul>
-                                <li class="p-0">
-                                  <label class="p-0 m-0">
-                                    <input type="checkbox" />
-                                    <span class="timetable__box-check"></span>
-                                  </label>
-                                </li>
-                                <li class="p-0">
-                                  <label class="p-0 m-0">
-                                    <input type="checkbox" />
-                                    <span class="timetable__box-check"></span>
-                                  </label>
-                                </li>
-                                <li class="p-0">
-                                  <label class="p-0 m-0">
-                                    <input type="checkbox" />
-                                    <span class="timetable__box-check"></span>
-                                  </label>
-                                </li>
-                                <li class="p-0">
-                                  <label class="p-0 m-0">
-                                    <input type="checkbox" />
-                                    <span class="timetable__box-check"></span>
-                                  </label>
-                                </li>
-                                <li class="p-0">
-                                  <label class="p-0 m-0">
-                                    <input type="checkbox" />
-                                    <span class="timetable__box-check"></span>
-                                  </label>
-                                </li>
-                                <li class="p-0">
-                                  <label class="p-0 m-0">
-                                    <input type="checkbox" />
-                                    <span class="timetable__box-check"></span>
-                                  </label>
-                                </li>
-                                <li class="p-0">
-                                  <label class="p-0 m-0">
-                                    <input type="checkbox" />
-                                    <span class="timetable__box-check"></span>
-                                  </label>
-                                </li>
-                              </ul>
-                            </div>
-          
-                            <div class="d-block timetable__color timetable__color_green">
-                              <ul>
-                                <li class="p-0">
-                                  <label class="p-0 m-0">
-                                    <input type="checkbox" />
-                                    <span
-                                      class="timetable__box-check timetable__box-check_blue"
-                                    ></span>
-                                  </label>
-                                </li>
-                                <li class="p-0">
-                                  <label class="p-0 m-0">
-                                    <input type="checkbox" />
-                                    <span
-                                      class="timetable__box-check timetable__box-check_blue"
-                                    ></span>
-                                  </label>
-                                </li>
-                                <li class="p-0">
-                                  <label class="p-0 m-0">
-                                    <input type="checkbox" />
-                                    <span
-                                      class="timetable__box-check timetable__box-check_blue"
-                                    ></span>
-                                  </label>
-                                </li>
-                                <li class="p-0">
-                                  <label class="p-0 m-0">
-                                    <input type="checkbox" />
-                                    <span
-                                      class="timetable__box-check timetable__box-check_blue"
-                                    ></span>
-                                  </label>
-                                </li>
-                                <li class="p-0">
-                                  <label class="p-0 m-0">
-                                    <input type="checkbox" />
-                                    <span
-                                      class="timetable__box-check timetable__box-check_blue"
-                                    ></span>
-                                  </label>
-                                </li>
-                                <li class="p-0">
-                                  <label class="p-0 m-0">
-                                    <input type="checkbox" />
-                                    <span
-                                      class="timetable__box-check timetable__box-check_blue"
-                                    ></span>
-                                  </label>
-                                </li>
-                                <li class="p-0">
-                                  <label class="p-0 m-0">
-                                    <input type="checkbox" />
-                                    <span
-                                      class="timetable__box-check timetable__box-check_blue"
-                                    ></span>
-                                  </label>
-                                </li>
-                              </ul>
-                            </div>
-          
-                            <div class="d-block timetable__color timetable__color_green">
-                              <ul>
-                                <li class="p-0">
-                                  <label class="p-0 m-0">
-                                    <input type="checkbox" />
-                                    <span
-                                      class="timetable__box-check timetable__box-check_green"
-                                    ></span>
-                                  </label>
-                                </li>
-                                <li class="p-0">
-                                  <label class="p-0 m-0">
-                                    <input type="checkbox" />
-                                    <span
-                                      class="timetable__box-check timetable__box-check_green"
-                                    ></span>
-                                  </label>
-                                </li>
-                                <li class="p-0">
-                                  <label class="p-0 m-0">
-                                    <input type="checkbox" />
-                                    <span
-                                      class="timetable__box-check timetable__box-check_green"
-                                    ></span>
-                                  </label>
-                                </li>
-                                <li class="p-0">
-                                  <label class="p-0 m-0">
-                                    <input type="checkbox" />
-                                    <span
-                                      class="timetable__box-check timetable__box-check_green"
-                                    ></span>
-                                  </label>
-                                </li>
-                                <li class="p-0">
-                                  <label class="p-0 m-0">
-                                    <input type="checkbox" />
-                                    <span
-                                      class="timetable__box-check timetable__box-check_green"
-                                    ></span>
-                                  </label>
-                                </li>
-                                <li class="p-0">
-                                  <label class="p-0 m-0">
-                                    <input type="checkbox" />
-                                    <span
-                                      class="timetable__box-check timetable__box-check_green"
-                                    ></span>
-                                  </label>
-                                </li>
-                                <li class="p-0">
-                                  <label class="p-0 m-0">
-                                    <input type="checkbox" />
-                                    <span
-                                      class="timetable__box-check timetable__box-check_green"
-                                    ></span>
-                                  </label>
-                                </li>
-                              </ul>
-                            </div>
-          
-                            <div class="timetable__descr d-flex">
-                              <div class="timetable__design"><span></span> Design</div>
-                              <div class="timetable__development">
-                                <span></span> Development
-                              </div>
-                              <div class="timetable__communication">
-                                <span></span> Communication
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <!-- Gant -->
                   </div>
-
                   <div
-                    class="tab-pane fade"
-                    id="pills-attached"
-                    role="tabpanel"
-                    aria-labelledby="pills-attached-tab"
+                    class="card__heading d-flex justify-content-between align-items-start"
                   >
-                    <div class="modal-userProfile__blockTitle">
-                      October 2020
-                    </div>
+                    <div class="card__total">$1,238.90</div>
+                    <div class="card__date">vs last week</div>
+                  </div>
+                  <div id="btcWallet"></div>
+                </div>
+              </div>
+            </div>
 
-                    <div class="row mx-0 attached-block">
-                      <div class="attached-block__image">
-                        <img src="../img/attached1.png" alt="" />
-                      </div>
-                      <div class="attached-block__info">
-                        <div class="attached-block__title">
-                          <a href="#">image21.png</a>
-                        </div>
-                        <div class="attached-block__descr">653.1Kb</div>
-                        <div class="attached-block__descr">Oct 13 at 14:21</div>
-                      </div>
+            
+            
+            <!-- Area chart -->
+            <div class="col-xl-3 col-md-6">
+              <div class="card areaWidget no-height-responsive">
+                <div class="card-body">
+                  <div
+                    class="card__heading d-flex justify-content-between align-items-center"
+                  >
+                    <h3 class="card__title d-flex align m-0">Deposit Account</h3>
+                    <div
+                      class="card__percentage d-flex justify-content-between align-items-center"
+                    >
+                      <div class="card__percent">7.9%</div>
+                      <i class="up-arrow"><svg class="icon"><use xlink:href="#greenTopArrow"></use></svg></i>
                     </div>
+                  </div>
+                  <div
+                    class="card__heading d-flex justify-content-between align-items-start"
+                  >
+                    <div class="card__total">$8,144.17</div>
+                    <div class="card__date">vs last week</div>
+                  </div>
+                  <div id="myChart"></div>
+                </div>
+              </div>
+            </div>
 
-                    <div class="row mx-0 attached-block">
-                      <div class="attached-block__image">
-                        <img src="../img/attached2.png" alt="" />
-                      </div>
-                      <div class="attached-block__info">
-                        <div class="attached-block__title">
-                          <a href="#">invoice.doc</a>
-                        </div>
-                        <div class="attached-block__descr">241.15Kb</div>
-                        <div class="attached-block__descr">Oct 13 at 14:21</div>
-                      </div>
-                    </div>
+            <!-- Simple Credit -->
+            <div class="col-xl-3 col-md-6">
+              <div class="card no-height-responsive">
+                <div class="card-body">
+                  <div class="d-flex justify-content-between align-items-start">
+                    <div class="card__total fs-22-x text-adjustment">Simple Credit</div>
+                  </div>
+                  <p class="black-paragraph">Next auto-payments</p>
+                  <div
+                    class="d-flex justify-content-between align-items-center card-block"
+                  >
+                    
 
-                    <div class="row mx-0 attached-block">
-                      <div class="attached-block__image">
-                        <img src="../img/attached3.png" alt="" />
-                      </div>
-                      <div class="attached-block__info">
-                        <div class="attached-block__title">
-                          <a href="#">image221.png</a>
-                        </div>
-                        <div class="attached-block__descr">1.1Mb</div>
-                        <div class="attached-block__descr">Oct 13 at 14:21</div>
-                      </div>
-                    </div>
-
-                    <div class="row mx-0 attached-block">
-                      <div class="attached-block__image">
-                        <img src="../img/attached4.png" alt="" />
-                      </div>
-                      <div class="attached-block__info">
-                        <div class="attached-block__title">
-                          <a href="#">avatar.png</a>
-                        </div>
-                        <div class="attached-block__descr">653.1Kb</div>
-                        <div class="attached-block__descr">Oct 13 at 14:21</div>
-                      </div>
-                    </div>
-
-                    <div class="modal-userProfile__blockTitle">
-                      September 2020
-                    </div>
-                    <div class="row mx-0 attached-block">
-                      <div class="attached-block__image">
-                        <img src="../img/attached5.png" alt="" />
-                      </div>
-                      <div class="attached-block__info">
-                        <div class="attached-block__title">
-                          <a href="#">image21.png</a>
-                        </div>
-                        <div class="attached-block__descr">653.1Kb</div>
-                        <div class="attached-block__descr">Oct 13 at 14:21</div>
+                    <div class="d-block" style="width:100%;">
+                      <div class="compare__percent text-right">$772.13</div>
+                      <div class="justify-space-between">
+                        <div class="compare__percent text-left">82% used</div>
+                        <div class="compare__total text-right">Limit 1000</div>
                       </div>
                     </div>
                   </div>
 
+                  <div class="progress table__progress">
+                    <div
+                      class="progress-bar"
+                      style="width: 37%"
+                      role="progressbar"
+                      aria-valuenow="37"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    ></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Simple Credit Ends -->
+
+            <div class="col-xl-3 col-md-6">
+              <div class="card areaWidget no-height-responsive">
+                <div class="card-body">
                   <div
-                    class="tab-pane fade"
-                    id="pills-permissions"
-                    role="tabpanel"
-                    aria-labelledby="pills-permissions-tab"
+                    class="card__heading d-flex justify-content-between align-items-center"
                   >
-                    <div class="permissions-block">
-                      <!-- Switcher with text -->
-                      <div class="switcherWithText">
-                        <label for="permissions1" class="switcherWithText_label"
-                          >Access to personal data</label
-                        >
-                        <input
-                          type="checkbox"
-                          id="permissions1"
-                          style="display: none"
-                        />
-                        <label for="permissions1" class="toggle1">
-                          <span></span>
-                        </label>
-                      </div>
-                      <!-- Switcher with text -->
+                    <h3 class="card__title d-flex align m-0">My Taxes</h3>
+                    <div
+                      class="card__percentage d-flex justify-content-between align-items-center"
+                    >
+                      <div class="card__percent">7.9%</div>
+                      <i class="up-arrow"><svg class="icon"><use xlink:href="#greenTopArrow"></use></svg></i>
                     </div>
+                  </div>
+                  <div
+                    class="card__heading d-flex justify-content-between align-items-start"
+                  >
+                    <div class="card__total">$8,144.17</div>
+                    <div class="card__date">vs last week</div>
+                  </div>
+                  <div id="myTaxes"></div>
+                </div>
+              </div>
+            </div>
+            <!-- Area chart -->
 
-                    <div class="permissions-block">
-                      <!-- Switcher with text -->
-                      <div class="switcherWithText">
-                        <label for="permissions2" class="switcherWithText_label"
-                          >Editing charts</label
-                        >
-                        <input
-                          type="checkbox"
-                          id="permissions2"
-                          style="display: none"
-                          checked
-                        />
-                        <label for="permissions2" class="toggle1">
-                          <span></span>
-                        </label>
-                      </div>
-                      <!-- Switcher with text -->
+            <!-- Bar chart -->
+            <!-- <div class="col-xl-3 col-md-6">
+              <div class="card">
+                <div class="card-body">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <h3 class="card__title d-flex align m-0">Revenue</h3>
+                    <div
+                      class="card__percentage d-flex justify-content-between align-items-center"
+                    >
+                      <div class="card__percent">-12.2%</div>
+                      <i class="down-arrow"><svg class="icon"><use xlink:href="#redTopDown"></use></svg></i>
                     </div>
+                  </div>
+                  <div class="d-flex justify-content-between align-items-start">
+                    <div class="card__total">$21 434</div>
+                    <div class="card__date">vs last week</div>
+                  </div>
+                  <div id="barChart"></div>
+                </div>
+              </div>
+            </div> -->
+            <!-- Bar chart -->
 
-                    <div class="permissions-block">
-                      <!-- Switcher with text -->
-                      <div class="switcherWithText">
-                        <label for="permissions3" class="switcherWithText_label"
-                          >Sharing</label
-                        >
-                        <input
-                          type="checkbox"
-                          id="permissions3"
-                          style="display: none"
-                        />
-                        <label for="permissions3" class="toggle1">
-                          <span></span>
-                        </label>
+            <!-- Radial chart -->
+            <!-- <div class="col-xl-3 col-md-6">
+              <div class="card radialWidget">
+                <div class="card-body">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <h3 class="card__title d-flex align m-0">Left to goal</h3>
+                  </div>
+                  <div class="d-flex justify-content-between align-items-start">
+                    <div class="card__total">$4 463</div>
+                  </div>
+              
+                <canvas class="dial"></canvas>
+                </div>
+              </div>
+            </div> -->
+            <!-- Radial chart -->
+          </div>
+          <div class="row justify-content-between">
+            <div class="col-xl-6">
+              <div class="card card__two no-height">
+                <div class="card-body users" style="overflow: auto;">
+                  <div class="d-flex justify-content-between">
+                    <h3 class="text-style-1 text-adjustment">Recent Transactions</h3>
+                    <a href="#" class="see-all-transaction">See all transactions</a>
+                  </div>
+                  <div class="d-flex justify-content-between align-items-center users__info mt-20-x">
+                    <div class="users__image" style="width:100%;display:flex;justify-content: flex-start;align-items: center;">
+                      <div class="currency-box justify-center-align">
+                        <img class="company-img" src="../img/google.svg" alt="">
                       </div>
-                      <!-- Switcher with text -->
+                      <div class="users__name ml-15-x">
+                        <div class="users__author fs-18-x width-100 text-left">Google</div>
+                        <div class="users__jobtitle company-category">Business</div>
+                      </div>
                     </div>
-
-                    <div class="permissions-block">
-                      <!-- Switcher with text -->
-                      <div class="switcherWithText">
-                        <label for="permissions4" class="switcherWithText_label"
-                          >Access to statistics</label
-                        >
-                        <input
-                          type="checkbox"
-                          id="permissions4"
-                          style="display: none"
-                        />
-                        <label for="permissions4" class="toggle1">
-                          <span></span>
-                        </label>
-                      </div>
-                      <!-- Switcher with text -->
+                    <div class="width-80">
+                      <div class="users__price company-price">-$55.20</div>
+                      <div class="users__jobtitle company-category-s">07/25 7:25AM</div>
                     </div>
+                  </div>
 
-                    <div class="permissions-block">
-                      <!-- Switcher with text -->
-                      <div class="switcherWithText">
-                        <label for="permissions5" class="switcherWithText_label"
-                          >Exporting</label
-                        >
-                        <input
-                          type="checkbox"
-                          id="permissions5"
-                          style="display: none"
-                          checked
-                        />
-                        <label for="permissions5" class="toggle1">
-                          <span></span>
-                        </label>
+                  <div class="d-flex justify-content-between align-items-center users__info mt-20-x">
+                    <div class="users__image" style="width:100%;display:flex;justify-content: flex-start;align-items: center;">
+                      <div class="currency-box justify-center-align">
+                        <img class="company-img" src="../img/american-express.svg" alt="">
                       </div>
-                      <!-- Switcher with text -->
+                      <div class="users__name ml-15-x">
+                        <div class="users__author fs-18-x width-100 text-left">American Express</div>
+                        <div class="users__jobtitle company-category">Wire Transfer</div>
+                      </div>
+                    </div>
+                    <div class="width-80">
+                      <div class="users__price company-price">-$55.20</div>
+                      <div class="users__jobtitle company-category-s">07/25 7:25AM</div>
+                    </div>
+                  </div>
+
+                  <div class="d-flex justify-content-between align-items-center users__info mt-20-x">
+                    <div class="users__image" style="width:100%;display:flex;justify-content: flex-start;align-items: center;">
+                      <div class="currency-box justify-center-align">
+                        <img class="company-img" src="../img/youtube.svg" alt="">
+                      </div>
+                      <div class="users__name ml-15-x">
+                        <div class="users__author fs-18-x width-100 text-left">Youtube Premium</div>
+                        <div class="users__jobtitle company-category">Entertainment</div>
+                      </div>
+                    </div>
+                    <div class="width-80">
+                      <div class="users__price company-price">-$55.20</div>
+                      <div class="users__jobtitle company-category-s">07/25 7:25AM</div>
+                    </div>
+                  </div>
+
+                  <div class="d-flex justify-content-between align-items-center users__info mt-20-x">
+                    <div class="users__image" style="width:100%;display:flex;justify-content: flex-start;align-items: center;">
+                      <div class="currency-box justify-center-align">
+                        <img class="company-img" src="../img/upwork.png" alt="">
+                      </div>
+                      <div class="users__name ml-15-x">
+                        <div class="users__author fs-18-x width-100 text-left">Upwork</div>
+                        <div class="users__jobtitle company-category">Business</div>
+                      </div>
+                    </div>
+                    <div class="width-80">
+                      <div class="users__price company-price">-$55.20</div>
+                      <div class="users__jobtitle company-category-s">07/25 7:25AM</div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
+
+            <div class="col-xl-6">
+              <div class="row">
+                <div class="col-xl-12">
+                  <div class="card no-height bg-green">
+                    <div class="card-body">
+                      <div class="d-flex justify-content-between align-items-start">
+                        <div class="text-style-1 color-white">Insights</div>
+                      </div>
+                      <div class="d-flex row flex-end mt-30-x">
+                        <div class="col-lg-6">
+                          <p class="color-white text-left fs-13-x">
+                            Money in last 30 days
+                          </p>
+                          <h2 class="text-left color-white">
+                            $712.13
+                          </h2>
+                        </div>
+                        <div class="col-lg-6">
+                          <p class="color-white text-left fs-13-x">
+                            Money out last 30 days
+                          </p>
+                          <h2 class="text-left color-white">
+                            $14,387.35
+                          </h2>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+    
+                <div class="col-xl-12">
+                  <div class="card">
+                    <div class="card-body">
+                      <div class="d-flex justify-content-between align-items-center">
+                        <h3 class="card__title d-flex align m-0">Revenue</h3>
+                        <div
+                          class="card__percentage d-flex justify-content-between align-items-center"
+                        >
+                          <div class="card__percent">-12.2%</div>
+                          <i class="down-arrow"><svg class="icon"><use xlink:href="#redTopDown"></use></svg></i>
+                        </div>
+                      </div>
+                      <div class="d-flex justify-content-between align-items-start">
+                        <div class="card__total">$21,434</div>
+                        <div class="card__date">vs last week</div>
+                      </div>
+                      <div id="barChart"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
           </div>
-          <!-- Modal-User profile -->
-           <!-- Modal -->
-           <div
-           class="modal center fade"
-           id="removeModal"
-           tabindex="-1"
-           role="dialog"
-         >
-           <div class="modal-dialog" role="document">
-             <div class="removeModal modal-content">
-               <button
-                 type="button"
-                 class="modal-close"
-                 data-dismiss="modal"
-                 aria-label="Close"
-               >
-                 <span aria-hidden="true"></span>
-               </button>
-               <div class="removeModal__image">
-                 <svg class="trash">
-                   <use xlink:href="#trashIcon"></use>
-                 </svg>
-               </div>
-               <div class="removeModal__title">
-                 You really want to remove all your data?
-               </div>
-               <div class="removeModal__descr">
-                 This action cannot be undone
-               </div>
-               <div class="removeModal__buttons">
-                 <a href="#" class="btn btn__remove"> Delete all data </a>
-                 <a
-                   href="#"
-                   class="btn btn__cancel"
-                   data-dismiss="modal"
-                   aria-label="Close"
-                 >
-                   Cancel
-                 </a>
-               </div>
-             </div>
-           </div>
-          </div>
-          <!-- Modal -->
         </div>
       </section>
       <!-- Main section -->
     </div>
 
-     <!-- Spider -->
-     <div class="col-xl-4 col-lg-6 d-none">
-      <div class="card card__two">
-        <div class="card-body spider__container">
-          <div
-            class="d-flex justify-content-between align-items center spider"
-          >
-            <h3 class="users__title">Avg. salary</h3>
-            <div class="spider__teams d-flex align-items-center">
-              <div id="do_legend-spider"></div>
-            </div>
-          </div>
+    
 
-          <div class="card__graphic">
-            <canvas id="spiderChart" height="225"></canvas>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Spider -->
-
+     <!-- Doughnut -->
+     
+    <!-- Doughnut -->
     <script src="../js/libs/jquery.min.js"></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="../js/libs/bootstrap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/js/bootstrap-select.min.js"></script>
     <script src="../js/libs/moment.min.js"></script>
@@ -1558,10 +1028,37 @@
     <script src="../js/libs/datepicker.js"></script>
     <script src="../js/libs/chart.min.js"></script>
     <script src="../js/libs/zingchart.min.js"></script>
-    <script src="../js/libs/d3.min.js"></script>
     <script src="../js/myCharts.js"></script>
-    <script src="../js/4colCharts.js"></script>
-    <script src="../js/8colCharts.js"></script>
+    <script src="../js/mytaxes.js"></script>
+    <script src="../js/btcWallet.js"></script>
+    <script src="../js/3colCharts.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const getSort = ({ target }) => {
+          const order = (target.dataset.order = -(target.dataset.order || -1));
+          const index = [...target.parentNode.cells].indexOf(target);
+          const collator = new Intl.Collator(["en"], { numeric: true });
+          const comparator = (index, order) => (a, b) =>
+            order *
+            collator.compare(
+              a.children[index].innerHTML,
+              b.children[index].innerHTML
+            );
+
+          for (const tBody of target.closest("table").tBodies)
+            tBody.append(...[...tBody.rows].sort(comparator(index, order)));
+
+          for (const cell of target.parentNode.cells)
+            cell.classList.toggle("sorted", cell === target);
+        };
+
+        document
+          .querySelectorAll(".table_sort thead th:first-of-type")
+          .forEach((tableTH) =>
+            tableTH.addEventListener("click", () => getSort(event))
+          );
+      });
+    </script>
     <script src="../js/main.js"></script>
   </body>
 </html>

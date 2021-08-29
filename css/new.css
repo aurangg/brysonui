@@ -34,6 +34,9 @@
 .fs-22-x{
     font-size:22px;
 }
+.fs-13-x{
+    font-size:13px;
+}
 .fs-18-x{
     font-size:18px;
 }
@@ -69,6 +72,15 @@
     display:flex;
     align-items: flex-start;
 }
+.flex-end{
+    display: flex;
+    align-items: flex-end;
+}
+
+
+
+
+
 .inline-block{
     display:inline-block;
 }
@@ -107,6 +119,7 @@
     margin-top:10px;
     font-size:12px;
     text-align: right;
+    width: 100%;
 }
 .see-all-transaction{
     font-size:16px;
@@ -117,7 +130,24 @@
 .company-price{
     font-size:16px;
     width:100%;
+    text-align: right;
 }
 .width-100{
     width: 100% !important;
+}
+.width-80{
+    width: 80% !important;
+}
+.height-50{
+    height:50%;
+}
+.bg-green{
+    background: #20c933;
+}
+.color-white{
+    color:white;
+}
+.no-height{
+    height:auto !important;
+    overflow: auto;
 }

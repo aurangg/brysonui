@@ -21294,19 +21294,28 @@ li.search-choice
     font-weight: 600 !important;
   }
   .refferal__table td:nth-of-type(1):before {
-    content: "Income";
+    content: "Customer";
   }
   .refferal__table td:nth-of-type(2):before {
-    content: "Permissions";
+    content: "Invoice #";
   }
   .refferal__table td:nth-of-type(3):before {
-    content: "UTM Sources";
+    content: "Amount";
   }
   .refferal__table td:nth-of-type(4):before {
-    content: "Header title";
+    content: "Period";
   }
   .refferal__table td:nth-of-type(5):before {
-    content: "";
+    content: "Hours";
+  }
+  .refferal__table td:nth-of-type(6):before {
+    content: "Due";
+  }
+  .refferal__table td:nth-of-type(7):before {
+    content: "Created";
+  }
+  .refferal__table td:nth-of-type(8):before {
+    content: "Status";
   }
 }
 

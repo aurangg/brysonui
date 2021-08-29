@@ -52,6 +52,9 @@
 .mt-20-x{
     margin-top:20px;
 }
+.mb-13-x{
+    margin-bottom: 13px;
+}
 
 
 .justify-space-between{
@@ -186,5 +189,8 @@ color: #000000;
     .no-height-responsive{
         height:auto !important;
         min-height:0px !important;
+    }
+    .margin-responsive{
+        margin:13px 0px;
     }
 }

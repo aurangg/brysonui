@@ -30,7 +30,9 @@
     letter-spacing: -0.5px;;
 }
 
-
+.h-500-x{
+    height:400px;
+}
 .fs-22-x{
     font-size:22px;
 }
@@ -73,6 +75,12 @@
 .mb-13-x{
     margin-bottom: 13px;
 }
+.res-mr-30-x{
+    margin-right:50px;
+}
+.border-bottom-black{
+    border-bottom:2px solid black;
+}
 
 
 .justify-space-between{
@@ -100,8 +108,36 @@
 
 
 
-
-
+#do_legend li span{
+    font-size: 16px;
+}
+#do_legend > ul{
+    display:flex;
+    margin-top: 20px;
+}
+#do_legend li{
+    display:flex;
+    align-items: center;
+}
+.last-week-price{
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 39px;
+    letter-spacing: -2px;
+    color: #000000;
+}
+.last-week{
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 16px;
+    letter-spacing: -0.5px;
+    color: #000000;
+    margin-bottom:5px;
+}
 .inline-block{
     display:inline-block;
 }
@@ -253,7 +289,9 @@ letter-spacing: -0.5px;
 color: #FFFFFF;
 }
 
-
+.light-grey{
+    color: rgba(0, 0, 0, 0.5);
+}
 
 
 @media(max-width:500px){
@@ -274,5 +312,11 @@ color: #FFFFFF;
     }
     .margin-responsive{
         margin:13px 0px;
+    }
+    .res-mr-30-x{
+        margin-right:0px;
+    }
+    .h-500-x{
+        height: 300px;
     }
 }
